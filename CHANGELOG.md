@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased — terminal agent
+
+- **`tools/dwh_agent.py`**: Claude in the terminal, on one pipeline, for any kind of data (Claude
+  Agent SDK). It works out the stage from the files (setup → draft → await answers → import →
+  bronze → after first load → build → operate). It drafts, writes the workbook, builds, explains and
+  commits locally. People answer, approve, release and push. `--check` shows the stage without the AI.
+- Rules in code (`tools/dwhagent/policy.py`): an allowlisted shell (one plain command per call), a
+  write allowlist, no raw data or warehouse reads, no approve/release/push. Each rule is checked on
+  every call by a hook, the read-only reviewer subagent's calls included. Personal settings, MCP
+  servers, web tools and the browser integration are switched off.
+- `tools/dwhagent/probe.py`: counts-only diagnostics (tables, dead letters, what-if on a temporary
+  copy). `tools/dwhagent/commit.py`: a guarded local commit of one pipeline, on a branch, never pushed.
+- `.claude-plugin/plugin.json`: the repository's `skills/` load as plugin skills (`dwh:dwh-init` …).
+- Tests: 137 policy cases, the stage machine, and an end-to-end wiring test through the real CLI with
+  a scripted stand-in for the model (CI job `agent`). Docs: `docs/agent.md`, ADR 0005.
+
 ## 1.2.0 — pipelines repository
 
 - **Layout v2.** One folder per layer (`bronze/ silver/ gold/ serve/`), each with `specs/`,

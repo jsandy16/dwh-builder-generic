@@ -11,4 +11,4 @@ select = ["F", "E9"]
 ignore = ["F401"]  # re-exports and import-for-side-effect are deliberate in the kernel
 
 [tool.pytest.ini_options]
-testpaths = ["framework/tests"]
+testpaths = ["framework/tests", "tools/dwhagent/tests"]

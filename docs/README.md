@@ -6,6 +6,7 @@
 | [repository-layout.md](repository-layout.md) | where everything lives, and what git holds |
 | [pipeline-contract.md](pipeline-contract.md) | what a pipeline folder must contain (checked by CI) |
 | [architecture.md](architecture.md) | how the skills, the kernel and the pipelines fit together |
+| [agent.md](agent.md) | the terminal agent: its role, what it may and may never do, how to run it |
 
 ## Runbooks
 
@@ -21,7 +22,8 @@
 [0001 Intake workbook](adr/0001-intake-workbook.md) ·
 [0002 YAML is the record, Excel is the form](adr/0002-yaml-record-excel-form.md) ·
 [0003 Layout v2 and a shared kernel](adr/0003-layout-v2-and-shared-kernel.md) ·
-[0004 Raw data out of git](adr/0004-raw-data-out-of-git.md)
+[0004 Raw data out of git](adr/0004-raw-data-out-of-git.md) ·
+[0005 A terminal agent, with its rules in code](adr/0005-terminal-agent.md)
 
 Pipeline-specific decisions live in each pipeline's `governance/adr/`.
 

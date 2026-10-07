@@ -3,10 +3,10 @@ name: framework
 # The kernel, the skills, the validation suite and the repo tools.
 on:
   pull_request:
-    paths: ["framework/**", "skills/**", "validation/**", "tools/**", ".github/workflows/framework.yml"]
+    paths: ["framework/**", "skills/**", "validation/**", "tools/**", ".claude-plugin/**", ".github/workflows/framework.yml"]
   push:
     branches: [main]
-    paths: ["framework/**", "skills/**", "validation/**", "tools/**", ".github/workflows/framework.yml"]
+    paths: ["framework/**", "skills/**", "validation/**", "tools/**", ".claude-plugin/**", ".github/workflows/framework.yml"]
   workflow_dispatch:
 
 permissions:
@@ -31,6 +31,25 @@ jobs:
         run: ruff check framework tools validation
       - name: Unit tests
         run: pytest -q framework/tests
+
+  agent:
+    needs: lint-and-unit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: |
+            framework/requirements.txt
+            tools/dwhagent/requirements.txt
+      - run: pip install -r framework/requirements.txt -r tools/dwhagent/requirements.txt pytest
+      # the rules call by call, the stage machine, and the rules end to end through the real
+      # Claude Code CLI with a scripted stand-in for the model (no API key, no network)
+      - name: Agent tests
+        run: pytest -q tools/dwhagent/tests
 
   validation:
     needs: lint-and-unit

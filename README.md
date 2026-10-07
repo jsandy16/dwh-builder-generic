@@ -17,7 +17,7 @@ named person has given it, and only a person can approve a release.
 | [`pipelines/`](pipelines/) | one folder per warehouse project, e.g. [`pipelines/olist/`](pipelines/olist/) |
 | [`templates/pipeline/`](templates/pipeline/) | the skeleton every new pipeline starts from |
 | [`validation/`](validation/) | the end-to-end test suite (≈200 checks, run on both project layouts) |
-| [`tools/`](tools/) | repo scripts: new pipeline, package skills, layout checks, data manifest |
+| [`tools/`](tools/) | repo scripts: new pipeline, package skills, layout checks, data manifest, and the terminal agent ([`tools/dwh_agent.py`](tools/dwh_agent.py)) |
 | [`docs/`](docs/) | the life-cycle guide, architecture, repository layout, runbooks, decision records |
 
 ## Quick start
@@ -41,6 +41,20 @@ cd pipelines/olist
 ```
 
 The full walk-through for non-engineers is in [`docs/guide.md`](docs/guide.md).
+
+### Or from the terminal: the dwh agent
+
+```bash
+pip install -r tools/dwhagent/requirements.txt
+export ANTHROPIC_API_KEY=...            # an Anthropic API key; each session costs money (default cap $5)
+python tools/dwh_agent.py sales --check # where the pipeline stands (free, no AI)
+python tools/dwh_agent.py sales         # Claude drafts, builds and explains; you decide
+```
+
+The agent works on one pipeline, for any kind of data. It drafts every answer and writes the
+workbook, runs the builds and commits locally. It never answers for an owner, never sees data
+values, and never approves, releases or pushes; those limits are enforced in code. See
+[`docs/agent.md`](docs/agent.md).
 
 ## Adding a pipeline
 

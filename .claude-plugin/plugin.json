@@ -1,0 +1,5 @@
+{
+  "name": "dwh",
+  "version": "1.2.0",
+  "description": "The dwh skills (dwh-init, dwh-bronze, dwh-silver, dwh-gold, dwh-serve, dwh-synthetic-source), loaded from skills/ by the dwh agent (tools/dwh_agent.py)."
+}

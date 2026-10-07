@@ -1,7 +1,7 @@
 project:
   dwh_core_version: "1.2.0"
   key_algo: v1
+  layout: v2
   name: olist
   profile: fast
   builder: sandeep
-  layout: v2

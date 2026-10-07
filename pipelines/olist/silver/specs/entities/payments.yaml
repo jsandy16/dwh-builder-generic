@@ -38,4 +38,3 @@ payments:
   lookups: "NA"
   flags: "NA"
   drop_columns: "NA"
-  readback_confirmed: "yes"

@@ -1,5 +1,5 @@
 pipeline: olist
-recorded_at: '2026-10-07T10:24:40+00:00'
+recorded_at: '2026-10-07T11:26:40+00:00'
 note: raw files are not in git; this lists exactly which files the build used
 files:
 - file: batch_01/olist_customers_dataset.csv

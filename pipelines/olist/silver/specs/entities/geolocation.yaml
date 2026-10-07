@@ -29,7 +29,6 @@ geolocation:
   - geolocation_zip_code_prefix ASC
   merge:
     strategy: append
-    partition_column: "NA"
   rejected_survivor_policy: keep_last_good
   dead_letter_tolerance_pct: "5"
   tolerance_source: owner
@@ -49,4 +48,3 @@ geolocation:
   lookups: "NA"
   flags: "NA"
   drop_columns: "NA"
-  readback_confirmed: "yes"

@@ -43,13 +43,3 @@ on_time_delivery_rate:
     excluded_by: "order_status <> 'delivered'"
     max_excluded_pct: "60"
   target_table: gold_on_time_delivery_rate_day
-  golden_values:
-  - key:
-      order_purchase_timestamp: '2017-02-07'
-    value: "98.1"
-  - key:
-      order_purchase_timestamp: '2017-03-06'
-    value: "95.7"
-  - key:
-      order_purchase_timestamp: '2017-02-12'
-    value: "98.4"

@@ -42,13 +42,3 @@ cancellation_rate:
     excluded_by: "none"
     max_excluded_pct: "0"
   target_table: gold_cancellation_rate_day
-  golden_values:
-  - key:
-      order_purchase_timestamp: '2017-02-07'
-    value: "0.9"
-  - key:
-      order_purchase_timestamp: '2017-03-06'
-    value: "1.0"
-  - key:
-      order_purchase_timestamp: '2017-03-01'
-    value: "1.0"

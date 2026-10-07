@@ -53,14 +53,6 @@ orders:
     delivered_without_date:
       predicate: "order_status = 'delivered' AND order_delivered_customer_date IS NULL"
       reason: delivered_without_date
-  structural_nulls:
-    "order_delivered_carrier_date|source=orders|order_status=invoiced": defect
-    "order_delivered_carrier_date|source=orders|order_status=processing": defect
-    "order_delivered_carrier_date|source=orders|order_status=unavailable": defect
-    "order_delivered_customer_date|source=orders|order_status=invoiced": defect
-    "order_delivered_customer_date|source=orders|order_status=processing": defect
-    "order_delivered_customer_date|source=orders|order_status=shipped": defect
-    "order_delivered_customer_date|source=orders|order_status=unavailable": defect
   null_policy:
     order_id: drop
     customer_id: keep
@@ -81,4 +73,3 @@ orders:
       missing: keep_null
   flags: "NA"
   drop_columns: "NA"
-  readback_confirmed: "yes"

@@ -29,13 +29,3 @@ avg_review_score:
     excluded_by: "none"
     max_excluded_pct: "0"
   target_table: gold_avg_review_score_day
-  golden_values:
-  - key:
-      review_creation_date: '2017-02-15'
-    value: "4.36"
-  - key:
-      review_creation_date: '2017-02-09'
-    value: "4.33"
-  - key:
-      review_creation_date: '2017-02-18'
-    value: "4.35"

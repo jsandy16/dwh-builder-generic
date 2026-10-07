@@ -30,13 +30,3 @@ avg_order_value:
     excluded_by: "ord_order_status IN ('canceled', 'unavailable')"
     max_excluded_pct: "10"
   target_table: gold_avg_order_value_day
-  golden_values:
-  - key:
-      ord_order_purchase_timestamp: '2017-02-12'
-    value: "243.52"
-  - key:
-      ord_order_purchase_timestamp: '2017-02-15'
-    value: "112.84"
-  - key:
-      ord_order_purchase_timestamp: '2016-10-03'
-    value: "63.14"

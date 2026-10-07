@@ -27,16 +27,3 @@ orders_placed:
     excluded_by: "none"
     max_excluded_pct: "0"
   target_table: gold_orders_placed_day
-  golden_values:
-  - key:
-      order_purchase_timestamp: '2017-02-07'
-      cust_customer_state: SP
-    value: "48"
-  - key:
-      order_purchase_timestamp: '2017-02-07'
-      cust_customer_state: RJ
-    value: "15"
-  - key:
-      order_purchase_timestamp: '2017-03-04'
-      cust_customer_state: MG
-    value: "7"

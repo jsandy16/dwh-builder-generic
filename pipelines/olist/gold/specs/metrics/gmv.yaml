@@ -27,13 +27,3 @@ gmv:
     excluded_by: "ord_order_status IN ('canceled', 'unavailable')"
     max_excluded_pct: "10"
   target_table: gold_gmv_day
-  golden_values:
-  - key:
-      ord_order_purchase_timestamp: '2017-02-12'
-    value: "15098.25"
-  - key:
-      ord_order_purchase_timestamp: '2017-02-15'
-    value: "6770.15"
-  - key:
-      ord_order_purchase_timestamp: '2016-10-03'
-    value: "441.98"

@@ -1,0 +1,64 @@
+title: Synthetic source data (dwh-synthetic-source, test tool)
+validators: [synthetic_sources]
+fields:
+  - path: synthetic.sources
+    section: What to generate
+    level: M
+    owner: DE
+    gate: A
+    type: map
+    min_items: 1
+    prompt: "Which bronze sources to generate test files for (keys must be existing source names).
+      Files follow the source's own declared schema, format and dialect."
+    why: synthetic data must match the schema real data will arrive in, or it proves nothing
+  - path: synthetic.sources.*.batches
+    section: What to generate
+    level: M
+    owner: DE
+    gate: A
+    type: list
+    min_items: 1
+    prompt: "Batch ids to write, e.g. [2024-01, 2024-02]. For a source without {batch} in its location use [full]."
+  - path: synthetic.sources.*.rows_per_batch
+    section: What to generate
+    level: M
+    owner: DE
+    gate: A
+    type: int
+    prompt: Rows per batch file.
+  - path: synthetic.sources.*.seed
+    section: What to generate
+    level: M
+    owner: DE
+    gate: A
+    type: int
+    prompt: Random seed (same seed → byte-identical files).
+  - path: synthetic.sources.*.defects
+    section: Planted defects
+    level: M
+    owner: DE
+    gate: A
+    type: map
+    none_only: "true"
+    prompt: "Percent of rows to plant each defect in — null (empty value), cast (unparseable value in a
+      typed column), domain (value outside allowed_values), duplicate (exact copy). E.g.
+      {null: 2, cast: 1, duplicate: 3}. Answer 'none' for clean data."
+    why: every planted row is written to a truth ledger that silver's dead-letter reasons are scored against
+  - path: synthetic.sources.*.columns
+    section: Value hints
+    level: O
+    owner: DE
+    gate: A
+    type: map
+    prompt: "Per column: {range: [lo, hi]} | {choices: [...]} | {sequence: yes} (1, 2, 3 … unique) |
+      {format: '%d/%m/%Y'} for date text | {null_rate: 30} (legitimately empty, not a defect) |
+      {after: <timestamp column>, minutes: [lo, hi]} (e.g. drop-off after pick-up)."
+    consequence: values drawn from the declared type and allowed values
+  - path: synthetic.sources.*.date_range
+    section: Value hints
+    level: O
+    owner: DE
+    gate: A
+    type: list
+    prompt: "[start, end] (YYYY-MM-DD) for date columns when the batch id is not a date."
+    consequence: dates fall in the batch month (date batch ids) or the last 30 days

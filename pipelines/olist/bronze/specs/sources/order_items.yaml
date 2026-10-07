@@ -1,0 +1,67 @@
+order_items:
+  role: fact
+  connector: local_file
+  location: "data/raw/batch_{batch}/olist_order_items_dataset.csv"
+  format: csv
+  load_type: incremental_append
+  redelivery_policy: replace
+  drift_policy: land_and_log
+  freshness:
+    basis: "none"
+  volume:
+    min_rows: "NA"
+    max_rows: "NA"
+  retry_attempts: "3"
+  credentials_env: "NA"
+  profile_split_by: "NA"
+  csv:
+    delimiter: ","
+    header: "yes"
+    quote: "\""
+    escape: "\""
+    encoding: utf-8
+    null_tokens: "NA"
+  schema:
+    columns:
+      order_id:
+        type: VARCHAR
+        required: "yes"
+        key: "yes"
+        allowed_values: "NA"
+        classification: internal
+      order_item_id:
+        type: BIGINT
+        required: "yes"
+        key: "yes"
+        allowed_values: "NA"
+        classification: internal
+      product_id:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      seller_id:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      shipping_limit_date:
+        type: TIMESTAMP
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      price:
+        type: "DECIMAL(18,2)"
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      freight_value:
+        type: "DECIMAL(18,2)"
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal

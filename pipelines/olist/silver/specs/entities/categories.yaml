@@ -1,0 +1,27 @@
+categories:
+  sources:
+  - categories
+  columns:
+    product_category_name:
+      type: VARCHAR
+    product_category_name_english:
+      type: VARCHAR
+  natural_key:
+  - product_category_name
+  tiebreaker:
+  - product_category_name ASC
+  merge:
+    strategy: partition_replace
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  null_policy:
+    product_category_name: drop
+    product_category_name_english: keep
+  hard_rejects: "none"
+  valid_anomalies: "none"
+  lookups: "NA"
+  flags: "NA"
+  drop_columns: "NA"

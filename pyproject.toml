@@ -1,0 +1,14 @@
+# Repository tooling settings (the kernel's own package metadata is framework/pyproject.toml).
+
+[tool.ruff]
+line-length = 125
+target-version = "py310"
+extend-exclude = ["pipelines/*/*/generated", "dist", "validation/runs"]
+
+[tool.ruff.lint]
+# Correctness only (pyflakes + syntax errors). Style is left to review.
+select = ["F", "E9"]
+ignore = ["F401"]  # re-exports and import-for-side-effect are deliberate in the kernel
+
+[tool.pytest.ini_options]
+testpaths = ["framework/tests"]

@@ -1,0 +1,30 @@
+# pip install pre-commit && pre-commit install
+repos:
+  - repo: local
+    hooks:
+      - id: dwh-guard
+        name: never commit raw data, local state or secrets
+        entry: python tools/guard_commit.py
+        language: system
+        pass_filenames: true
+      - id: dwh-layout
+        name: pipeline folders follow the contract
+        entry: python tools/check_layout.py
+        language: system
+        pass_filenames: false
+        files: ^pipelines/
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+        args: [--unsafe]
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+        exclude: (/generated/|\.xlsx$)
+      - id: trailing-whitespace
+        exclude: (/generated/|\.md$|\.xlsx$)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        files: ^(framework|tools|validation)/

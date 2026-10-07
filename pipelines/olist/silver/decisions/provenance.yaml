@@ -1,0 +1,3190 @@
+silver.entities:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b8d680d12174adb447fbafc72e9e6fef7004a11159569ce77c0ffc0316157400
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: ""
+  default_kept: "no"
+silver.entities.orders.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 33f7b61c6e0c31edcc17f36ef635acedf22d2d1090feb438931be448243acd14
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A6"
+  default_kept: "no"
+silver.entities.order_items.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f3f4a8bf27aaf1ff0d97a7cbd0f096c06be0dc21b1ff560e3109e84daa438d16
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A7"
+  default_kept: "no"
+silver.entities.payments.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 512b5a7643a398069d76e412e56592b258520dcfb00bbcd48ea7814b51b891a7
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A8"
+  default_kept: "no"
+silver.entities.reviews.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 2f5079de64856d5c357aba74c607d4b9f4cd294129d48e471534d53d27da0108
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A9"
+  default_kept: "no"
+silver.entities.customers.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: be21ec8ae2975d9c6b19849fd41746bc9b08728a46e204480b763edec45d7a79
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A10"
+  default_kept: "no"
+silver.entities.products.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b4b4ef0debede6ff09da0fe1bdac5fc7353db55b04d2d2bcd60bb7a8a1a25516
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A11"
+  default_kept: "no"
+silver.entities.sellers.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fdd2237d11233f412d25b35aa08e28b8812b945af4260fb7b5706871fb8b3329
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A12"
+  default_kept: "no"
+silver.entities.geolocation.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b4fcfe4a3955e425145bce287625962737f892f5d568b0ecfdaa2c60f01e6549
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A13"
+  default_kept: "no"
+silver.entities.categories.sources:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: dab44ca115554c1172bae6d2336b3e84f53631f8fc9424cca5138c2c2b05cbf9
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A14"
+  default_kept: "no"
+silver.entities.orders.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 3fc2c889b6e13ddac9cd09506e6affae3d450aafe39f8d864a8318e56e2722a0
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C6"
+  default_kept: "no"
+silver.entities.order_items.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c8a958e32a5f9c05a1b1794f37d4c6f36f715f5bf3e7ba220136948547104c65
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C14"
+  default_kept: "no"
+silver.entities.payments.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: e20162766d4125c6bb3da30645808e4f82344ddf66eb79fdc209dbe2cf04d937
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C21"
+  default_kept: "no"
+silver.entities.reviews.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d7315100b01ceef49d0d09f0d6fd9c6a84a297e65e511c33935e2e430eb8cdbd
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C26"
+  default_kept: "no"
+silver.entities.customers.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c7348c9c550b0dd2cc786a05215a2088109ee51ebdbdc40b65e731727897c97b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C33"
+  default_kept: "no"
+silver.entities.products.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 31c1f1be821ac9d230c85435f3871d740570aef1faf3e33a6765113ff98f8ffb
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C38"
+  default_kept: "no"
+silver.entities.sellers.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 93d2a16b7e7b23df38ce2e8181aac137a0091dade61bf086dd86b7891e85a92d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C47"
+  default_kept: "no"
+silver.entities.geolocation.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b798e946527be681d8ab75d7806fa5e30e125ec8cba57c381e34c1cbcdc26639
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C51"
+  default_kept: "no"
+silver.entities.categories.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b3dde2e1fce556d9aa3fe5815eb941fcc15f3847e867e1fc47fb934763d40119
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C56"
+  default_kept: "no"
+silver.entities.orders.columns.order_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F6"
+  default_kept: "yes"
+silver.entities.orders.columns.customer_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F7"
+  default_kept: "yes"
+silver.entities.orders.columns.order_status.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F8"
+  default_kept: "yes"
+silver.entities.orders.columns.order_purchase_timestamp.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b278523bce8fd885a27b9cb02eff62e5c052a7813c5b9fb3138f3335e4182740
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F9"
+  default_kept: "yes"
+silver.entities.orders.columns.order_approved_at.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b278523bce8fd885a27b9cb02eff62e5c052a7813c5b9fb3138f3335e4182740
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F10"
+  default_kept: "yes"
+silver.entities.orders.columns.order_delivered_carrier_date.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b278523bce8fd885a27b9cb02eff62e5c052a7813c5b9fb3138f3335e4182740
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F11"
+  default_kept: "yes"
+silver.entities.orders.columns.order_delivered_customer_date.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b278523bce8fd885a27b9cb02eff62e5c052a7813c5b9fb3138f3335e4182740
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F12"
+  default_kept: "yes"
+silver.entities.orders.columns.order_estimated_delivery_date.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b278523bce8fd885a27b9cb02eff62e5c052a7813c5b9fb3138f3335e4182740
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F13"
+  default_kept: "yes"
+silver.entities.order_items.columns.order_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F14"
+  default_kept: "yes"
+silver.entities.order_items.columns.order_item_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9050cfd663cdb0da3c5dff365bdc4017df6afb905a649382d077848d069b1497
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F15"
+  default_kept: "yes"
+silver.entities.order_items.columns.product_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F16"
+  default_kept: "yes"
+silver.entities.order_items.columns.seller_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F17"
+  default_kept: "yes"
+silver.entities.order_items.columns.shipping_limit_date.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b278523bce8fd885a27b9cb02eff62e5c052a7813c5b9fb3138f3335e4182740
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F18"
+  default_kept: "yes"
+silver.entities.order_items.columns.price.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: eea36a258b9de517d84770b332cada5dd3abc7beb43d593ee5633c9b8175e3ae
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F19"
+  default_kept: "yes"
+silver.entities.order_items.columns.freight_value.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: eea36a258b9de517d84770b332cada5dd3abc7beb43d593ee5633c9b8175e3ae
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F20"
+  default_kept: "yes"
+silver.entities.payments.columns.order_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F21"
+  default_kept: "yes"
+silver.entities.payments.columns.payment_sequential.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9050cfd663cdb0da3c5dff365bdc4017df6afb905a649382d077848d069b1497
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F22"
+  default_kept: "yes"
+silver.entities.payments.columns.payment_type.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F23"
+  default_kept: "yes"
+silver.entities.payments.columns.payment_installments.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9050cfd663cdb0da3c5dff365bdc4017df6afb905a649382d077848d069b1497
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F24"
+  default_kept: "yes"
+silver.entities.payments.columns.payment_value.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: eea36a258b9de517d84770b332cada5dd3abc7beb43d593ee5633c9b8175e3ae
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F25"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F26"
+  default_kept: "yes"
+silver.entities.reviews.columns.order_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F27"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_score.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9050cfd663cdb0da3c5dff365bdc4017df6afb905a649382d077848d069b1497
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F28"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_comment_title.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F29"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_comment_message.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F30"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_creation_date.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b278523bce8fd885a27b9cb02eff62e5c052a7813c5b9fb3138f3335e4182740
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F31"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_answer_timestamp.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b278523bce8fd885a27b9cb02eff62e5c052a7813c5b9fb3138f3335e4182740
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F32"
+  default_kept: "yes"
+silver.entities.customers.columns.customer_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F33"
+  default_kept: "yes"
+silver.entities.customers.columns.customer_unique_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F34"
+  default_kept: "yes"
+silver.entities.customers.columns.customer_zip_code_prefix.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F35"
+  default_kept: "yes"
+silver.entities.customers.columns.customer_city.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F36"
+  default_kept: "yes"
+silver.entities.customers.columns.customer_state.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F37"
+  default_kept: "yes"
+silver.entities.products.columns.product_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F38"
+  default_kept: "yes"
+silver.entities.products.columns.product_name_lenght.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F39"
+  default_kept: "yes"
+silver.entities.products.columns.product_description_lenght.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F40"
+  default_kept: "yes"
+silver.entities.products.columns.product_photos_qty.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F41"
+  default_kept: "yes"
+silver.entities.products.columns.product_weight_g.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F42"
+  default_kept: "yes"
+silver.entities.products.columns.product_length_cm.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F43"
+  default_kept: "yes"
+silver.entities.products.columns.product_height_cm.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F44"
+  default_kept: "yes"
+silver.entities.products.columns.product_width_cm.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F45"
+  default_kept: "yes"
+silver.entities.products.columns.product_category_name.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F46"
+  default_kept: "yes"
+silver.entities.sellers.columns.seller_id.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F47"
+  default_kept: "yes"
+silver.entities.sellers.columns.seller_zip_code_prefix.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F48"
+  default_kept: "yes"
+silver.entities.sellers.columns.seller_city.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F49"
+  default_kept: "yes"
+silver.entities.sellers.columns.seller_state.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F50"
+  default_kept: "yes"
+silver.entities.geolocation.columns.geolocation_zip_code_prefix.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F51"
+  default_kept: "yes"
+silver.entities.geolocation.columns.geolocation_lat.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F52"
+  default_kept: "yes"
+silver.entities.geolocation.columns.geolocation_lng.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 142be09588f2199fba838f9a6774e47f8c6cecf564b808672e33ea398b477181
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F53"
+  default_kept: "yes"
+silver.entities.geolocation.columns.geolocation_city.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F54"
+  default_kept: "yes"
+silver.entities.geolocation.columns.geolocation_state.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F55"
+  default_kept: "yes"
+silver.entities.categories.columns.product_category_name.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F56"
+  default_kept: "yes"
+silver.entities.categories.columns.product_category_name_english.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 557806f8f2ced92f94c229f1115f026e819e54cce8284c5dae867a05526e8d9b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!F57"
+  default_kept: "yes"
+silver.entities.orders.columns.order_purchase_timestamp.formats:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5f3c63bedb72725099bc1ff9b92ce6c1cb797b625a52f5d92c647ba37f1cd300
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!G9"
+  default_kept: "yes"
+silver.entities.orders.columns.order_approved_at.formats:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5f3c63bedb72725099bc1ff9b92ce6c1cb797b625a52f5d92c647ba37f1cd300
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!G10"
+  default_kept: "yes"
+silver.entities.orders.columns.order_delivered_carrier_date.formats:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5f3c63bedb72725099bc1ff9b92ce6c1cb797b625a52f5d92c647ba37f1cd300
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!G11"
+  default_kept: "yes"
+silver.entities.orders.columns.order_delivered_customer_date.formats:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5f3c63bedb72725099bc1ff9b92ce6c1cb797b625a52f5d92c647ba37f1cd300
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!G12"
+  default_kept: "yes"
+silver.entities.orders.columns.order_estimated_delivery_date.formats:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5f3c63bedb72725099bc1ff9b92ce6c1cb797b625a52f5d92c647ba37f1cd300
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!G13"
+  default_kept: "yes"
+silver.entities.order_items.columns.shipping_limit_date.formats:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5f3c63bedb72725099bc1ff9b92ce6c1cb797b625a52f5d92c647ba37f1cd300
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!G18"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_creation_date.formats:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5f3c63bedb72725099bc1ff9b92ce6c1cb797b625a52f5d92c647ba37f1cd300
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!G31"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_answer_timestamp.formats:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5f3c63bedb72725099bc1ff9b92ce6c1cb797b625a52f5d92c647ba37f1cd300
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!G32"
+  default_kept: "yes"
+silver.entities.orders.columns.order_purchase_timestamp.source_timezone:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!H9"
+  default_kept: "yes"
+silver.entities.orders.columns.order_approved_at.source_timezone:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!H10"
+  default_kept: "yes"
+silver.entities.orders.columns.order_delivered_carrier_date.source_timezone:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!H11"
+  default_kept: "yes"
+silver.entities.orders.columns.order_delivered_customer_date.source_timezone:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!H12"
+  default_kept: "yes"
+silver.entities.orders.columns.order_estimated_delivery_date.source_timezone:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!H13"
+  default_kept: "yes"
+silver.entities.order_items.columns.shipping_limit_date.source_timezone:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!H18"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_creation_date.source_timezone:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!H31"
+  default_kept: "yes"
+silver.entities.reviews.columns.review_answer_timestamp.source_timezone:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!H32"
+  default_kept: "yes"
+silver.entities.customers.mapping:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 2e044fe8f258fe580d98220f1400fb22c524bc7ef6eca2576da36457f648dea8
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C33"
+  default_kept: "no"
+silver.entities.sellers.mapping:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 178d3e63923bd67f1ba3cad6739de9e782c33631cf6fe979d6ab90f67d73de3f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C47"
+  default_kept: "no"
+silver.entities.geolocation.mapping:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 527979edc71ac86a3e4e7d42ff56b8f97319b60f0434f2a6c3d3cea6f30fe57b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!C51"
+  default_kept: "no"
+silver.entities.customers.mapping.customers.customer_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 1a8ce8893da413a39812afb211cee5c577c42b89e50e343cc7d8efb628dd5b4d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D33"
+  default_kept: "no"
+silver.entities.customers.mapping.customers.customer_unique_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: be546c31125f39fc9650e919a2334aa12d340ff4c5c7416cb6c10ea8c620f0d2
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D34"
+  default_kept: "no"
+silver.entities.customers.mapping.customers.customer_zip_code_prefix:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 457038698d04e172bf9a00b47a4f88a21d1a29200958eec9da54fc54c74b9d4e
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!E35"
+  default_kept: "no"
+silver.entities.customers.mapping.customers.customer_city:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: e880a94e644c2c70f69abfd36b7f49de2a502e7592e8f36a07c875d770bba4d7
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D36"
+  default_kept: "no"
+silver.entities.customers.mapping.customers.customer_state:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 18f94b472d85d367b4c34366d45012b7d65fd5211c0fa2a14e5f1e1730456443
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D37"
+  default_kept: "no"
+silver.entities.sellers.mapping.sellers.seller_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f0a1c2d04325404e97f22d9c7f1ba4dcade0c783c72651fd0885ebbc4b228500
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D47"
+  default_kept: "no"
+silver.entities.sellers.mapping.sellers.seller_zip_code_prefix:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 7de643da9b5edd921c66f1e1b152a02bf60c58c524ea37d6a83e8e909bd917cc
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!E48"
+  default_kept: "no"
+silver.entities.sellers.mapping.sellers.seller_city:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c31ef9b703f1227765fa0358d83c3b0c8d821162ded3087d99698bd90bd12ead
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D49"
+  default_kept: "no"
+silver.entities.sellers.mapping.sellers.seller_state:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c6377e25c6b1c02f884772b130b25b294b31fe99673cc762bc888b2013461f4d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D50"
+  default_kept: "no"
+silver.entities.geolocation.mapping.geolocation.geolocation_zip_code_prefix:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5cd56f7614e887127591012743ee279f88b0bdd6f51ad0270322bf16527010c9
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!E51"
+  default_kept: "no"
+silver.entities.geolocation.mapping.geolocation.geolocation_lat:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fea4283dffb123af1696762770ceef61fd92c01b78746134619e37ad0a139a4a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D52"
+  default_kept: "no"
+silver.entities.geolocation.mapping.geolocation.geolocation_lng:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 18b7a84a2dd4c4c347753be65f0db0dbf1d025b511872f6d19d8c04b28ac0e3e
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D53"
+  default_kept: "no"
+silver.entities.geolocation.mapping.geolocation.geolocation_city:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: bbcbadfbdf20590183107d7f83f064066d1c13e0050d4888cd651a9221f4d377
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D54"
+  default_kept: "no"
+silver.entities.geolocation.mapping.geolocation.geolocation_state:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 01eaeacf814bda89ec777b34fe327fbe4038ba27e6b8b67b5e9cd7255dfb3365
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Silver model!D55"
+  default_kept: "no"
+silver.entities.orders.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fe01ea8d19f1dfe675c65b7bb268a57251fc0c1d89fcbaaac516604b8669dee7
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D6"
+  default_kept: "yes"
+silver.entities.order_items.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f65ed1768caa6ba66a2136e62e6f058426e457fff856b4362506ef2e66c3fe28
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D7"
+  default_kept: "yes"
+silver.entities.payments.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5848cbebc01a7ee384251fed7dcd23dfe07a7ac3aebc601bbd86f97e92cc24d4
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D8"
+  default_kept: "yes"
+silver.entities.reviews.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 57050f23ee0101fa30e856173752bebdbac87e334985a089790476135c1013c3
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D9"
+  default_kept: "yes"
+silver.entities.customers.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5d7c415d255228c27493f57095b023048788a10ab172f77862ca1d868a6ed2ee
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D10"
+  default_kept: "yes"
+silver.entities.products.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9964f2be41d4060ca271494d90b2706bb8a7a026a2f711eca1019bb31db430a1
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D11"
+  default_kept: "yes"
+silver.entities.sellers.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: e0692ea3106da83982e01753669974fa330ebedff2c8aac6b70ba78a089d8e7e
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D12"
+  default_kept: "yes"
+silver.entities.geolocation.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 78cd7682a10c6aecc4e73e70e59a42d869490e0fb359572268696a3d1f8a3bb2
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D13"
+  default_kept: "yes"
+silver.entities.categories.natural_key:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 3a4ffafa2f41e761c06fa8e0b1ee660ad0a69692eac36a0bfcf7c92573bb85eb
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!D14"
+  default_kept: "yes"
+silver.entities.orders.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c24177677a0ff53df925af184333f3cafd24d696365f424b417eee1c43338b7b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E6"
+  default_kept: "yes"
+silver.entities.order_items.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9bd1bfd1fc613f90edba58e402dfbeae1b6811e0d6e162fdd010fe94b9c38c6e
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E7"
+  default_kept: "yes"
+silver.entities.payments.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 899d51ecf898e5536810f96abdb25bec8fb43975a864a8a810ec15443302fcd4
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E8"
+  default_kept: "yes"
+silver.entities.reviews.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: da897562e53e3c34688a9cf2ff256b5543589155a2bba5f619d4d3cf0f4d140f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E9"
+  default_kept: "yes"
+silver.entities.customers.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 27ebe8781061bea488ca1a4586059038bd54301fd2bff1e6fae15854715ed6a1
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E10"
+  default_kept: "yes"
+silver.entities.products.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 80f5033c50a41aba79e936112a46c2b0e2b70eca076e09f5601d8fac0e9ab76a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E11"
+  default_kept: "yes"
+silver.entities.sellers.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 14fe017661b0774c70e5aa8de66924a56ac7c278167374b8e5db595bad89f2c0
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E12"
+  default_kept: "yes"
+silver.entities.geolocation.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 797ebd126b56ea69e5d670975a07d0c6a8be892935348685bd90cbb4e3f15e88
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E13"
+  default_kept: "yes"
+silver.entities.categories.tiebreaker:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5eefe563c678b97f4411355a5206fccd8d92f0b511da9cac3b147582b6424462
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!E14"
+  default_kept: "yes"
+silver.entities.orders.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N6"
+  default_kept: "yes"
+silver.entities.order_items.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N7"
+  default_kept: "yes"
+silver.entities.payments.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N8"
+  default_kept: "yes"
+silver.entities.reviews.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N9"
+  default_kept: "yes"
+silver.entities.customers.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N10"
+  default_kept: "yes"
+silver.entities.products.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N11"
+  default_kept: "yes"
+silver.entities.sellers.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N12"
+  default_kept: "yes"
+silver.entities.geolocation.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N13"
+  default_kept: "yes"
+silver.entities.categories.rejected_survivor_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 685fa470dd6fe78c93f00ba8b6d7cc18a1f752e35f6c33b778d83100b8be0202
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!N14"
+  default_kept: "yes"
+silver.entities.orders.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 427ca73b70c65ece065ddc1c779e11daa29b64d871906be572345d5d0bc0c286
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G17"
+  default_kept: "no"
+silver.entities.order_items.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 1b6c49eefab854bc6b90cc0d9f6b67cb83388f3090e6ba4a082ee73f188c064d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G27"
+  default_kept: "no"
+silver.entities.payments.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8ceb86c6f121390f2758f3eca4d3ead23169940196ed6e9eeef0a1549106bf1d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G36"
+  default_kept: "no"
+silver.entities.reviews.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: ce231336632b862c6f99c0aef452d06d0d2bdcc40b6aa0c9e3ae2d28f2f7ff70
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G44"
+  default_kept: "no"
+silver.entities.customers.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 29b0f7dff2a9f918ecbdff92f99591534e6f6c7eec08fdea98959f71af6ccb38
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G53"
+  default_kept: "no"
+silver.entities.products.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 2cde921cbe8e5efffb6f0f5d8315177f2585900c3367c57eabb39f6c95e9f494
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G60"
+  default_kept: "no"
+silver.entities.sellers.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d9b218e4e16661b6a92a1e7421ff71d00ee24bb376c3393a0ae35e12e1a27bdd
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G71"
+  default_kept: "no"
+silver.entities.geolocation.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 78c49caaf663fc2fe6aad0cf06b2605d3e30babf51121cefa2eaa65abc46004d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G77"
+  default_kept: "no"
+silver.entities.categories.null_policy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 874fb6e0564faf32e61fb8aa46c1415f3d4ceca93df5eb46e605242541e60948
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G84"
+  default_kept: "no"
+silver.entities.orders.null_policy.order_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G17"
+  default_kept: "yes"
+silver.entities.orders.null_policy.customer_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G18"
+  default_kept: "yes"
+silver.entities.orders.null_policy.order_status:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G19"
+  default_kept: "yes"
+silver.entities.orders.null_policy.order_purchase_timestamp:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G20"
+  default_kept: "yes"
+silver.entities.orders.null_policy.order_approved_at:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G21"
+  default_kept: "yes"
+silver.entities.orders.null_policy.order_delivered_carrier_date:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G22"
+  default_kept: "yes"
+silver.entities.orders.null_policy.order_delivered_customer_date:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G23"
+  default_kept: "yes"
+silver.entities.orders.null_policy.order_estimated_delivery_date:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G24"
+  default_kept: "yes"
+silver.entities.order_items.null_policy.order_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G27"
+  default_kept: "yes"
+silver.entities.order_items.null_policy.order_item_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G28"
+  default_kept: "yes"
+silver.entities.order_items.null_policy.product_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G29"
+  default_kept: "yes"
+silver.entities.order_items.null_policy.seller_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G30"
+  default_kept: "yes"
+silver.entities.order_items.null_policy.shipping_limit_date:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G31"
+  default_kept: "yes"
+silver.entities.order_items.null_policy.price:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G32"
+  default_kept: "yes"
+silver.entities.order_items.null_policy.freight_value:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G33"
+  default_kept: "yes"
+silver.entities.payments.null_policy.order_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G36"
+  default_kept: "yes"
+silver.entities.payments.null_policy.payment_sequential:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G37"
+  default_kept: "yes"
+silver.entities.payments.null_policy.payment_type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G38"
+  default_kept: "yes"
+silver.entities.payments.null_policy.payment_installments:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G39"
+  default_kept: "yes"
+silver.entities.payments.null_policy.payment_value:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G40"
+  default_kept: "yes"
+silver.entities.reviews.null_policy.review_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G44"
+  default_kept: "yes"
+silver.entities.reviews.null_policy.order_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G45"
+  default_kept: "yes"
+silver.entities.reviews.null_policy.review_score:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G46"
+  default_kept: "yes"
+silver.entities.reviews.null_policy.review_comment_title:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G47"
+  default_kept: "yes"
+silver.entities.reviews.null_policy.review_comment_message:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G48"
+  default_kept: "yes"
+silver.entities.reviews.null_policy.review_creation_date:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G49"
+  default_kept: "yes"
+silver.entities.reviews.null_policy.review_answer_timestamp:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G50"
+  default_kept: "yes"
+silver.entities.customers.null_policy.customer_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G53"
+  default_kept: "yes"
+silver.entities.customers.null_policy.customer_unique_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G54"
+  default_kept: "yes"
+silver.entities.customers.null_policy.customer_zip_code_prefix:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G55"
+  default_kept: "yes"
+silver.entities.customers.null_policy.customer_city:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G56"
+  default_kept: "yes"
+silver.entities.customers.null_policy.customer_state:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G57"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G60"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_name_lenght:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G61"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_description_lenght:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G62"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_photos_qty:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G63"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_weight_g:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G64"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_length_cm:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G65"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_height_cm:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G66"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_width_cm:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G67"
+  default_kept: "yes"
+silver.entities.products.null_policy.product_category_name:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G68"
+  default_kept: "yes"
+silver.entities.sellers.null_policy.seller_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G71"
+  default_kept: "yes"
+silver.entities.sellers.null_policy.seller_zip_code_prefix:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G72"
+  default_kept: "yes"
+silver.entities.sellers.null_policy.seller_city:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G73"
+  default_kept: "yes"
+silver.entities.sellers.null_policy.seller_state:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G74"
+  default_kept: "yes"
+silver.entities.geolocation.null_policy.geolocation_zip_code_prefix:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G77"
+  default_kept: "yes"
+silver.entities.geolocation.null_policy.geolocation_lat:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G78"
+  default_kept: "yes"
+silver.entities.geolocation.null_policy.geolocation_lng:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G79"
+  default_kept: "yes"
+silver.entities.geolocation.null_policy.geolocation_city:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G80"
+  default_kept: "yes"
+silver.entities.geolocation.null_policy.geolocation_state:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G81"
+  default_kept: "yes"
+silver.entities.categories.null_policy.product_category_name:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G84"
+  default_kept: "yes"
+silver.entities.categories.null_policy.product_category_name_english:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0fc9e981262ade8d19676d1ee3a1d34733be1c113a52e6c07980ffc200e2e37d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G85"
+  default_kept: "yes"
+"silver.entities.orders.structural_nulls.order_delivered_carrier_date|source=orders|order_status=invoiced":
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8775c4038f79620c28b32f445b33c675ccdf4c68ee78179de3b132d86e68e7e5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G10"
+  default_kept: "no"
+"silver.entities.orders.structural_nulls.order_delivered_carrier_date|source=orders|order_status=processing":
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8775c4038f79620c28b32f445b33c675ccdf4c68ee78179de3b132d86e68e7e5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G11"
+  default_kept: "no"
+"silver.entities.orders.structural_nulls.order_delivered_carrier_date|source=orders|order_status=unavailable":
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8775c4038f79620c28b32f445b33c675ccdf4c68ee78179de3b132d86e68e7e5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G12"
+  default_kept: "no"
+"silver.entities.orders.structural_nulls.order_delivered_customer_date|source=orders|order_status=invoiced":
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8775c4038f79620c28b32f445b33c675ccdf4c68ee78179de3b132d86e68e7e5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G13"
+  default_kept: "no"
+"silver.entities.orders.structural_nulls.order_delivered_customer_date|source=orders|order_status=processing":
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8775c4038f79620c28b32f445b33c675ccdf4c68ee78179de3b132d86e68e7e5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G14"
+  default_kept: "no"
+"silver.entities.orders.structural_nulls.order_delivered_customer_date|source=orders|order_status=shipped":
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8775c4038f79620c28b32f445b33c675ccdf4c68ee78179de3b132d86e68e7e5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G15"
+  default_kept: "no"
+"silver.entities.orders.structural_nulls.order_delivered_customer_date|source=orders|order_status=unavailable":
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8775c4038f79620c28b32f445b33c675ccdf4c68ee78179de3b132d86e68e7e5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G16"
+  default_kept: "no"
+"silver.entities.reviews.structural_nulls.review_comment_title|source=reviews":
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8775c4038f79620c28b32f445b33c675ccdf4c68ee78179de3b132d86e68e7e5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G43"
+  default_kept: "yes"
+silver.entities.orders.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G9"
+  default_kept: "yes"
+silver.entities.order_items.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G26"
+  default_kept: "yes"
+silver.entities.payments.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b27c470a40851b17fa12cd22188d0dc26da2a2c40da441500f6d85a0bb98e077
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G35"
+  default_kept: "yes"
+silver.entities.reviews.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G42"
+  default_kept: "yes"
+silver.entities.customers.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G52"
+  default_kept: "yes"
+silver.entities.products.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G59"
+  default_kept: "yes"
+silver.entities.sellers.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G70"
+  default_kept: "yes"
+silver.entities.geolocation.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G76"
+  default_kept: "yes"
+silver.entities.categories.valid_anomalies:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G83"
+  default_kept: "yes"
+silver.entities.payments.valid_anomalies.zero_value.predicate:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 28119012a53cdb4b5b3f6a37b9049b6767d2713101665284f803af05083d0c67
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!D35"
+  default_kept: "no"
+silver.entities.payments.valid_anomalies.zero_value.reason:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: ee19920b243d28f907770f182dc918c1d9fb1b5f670d829801a90730d31cd0d2
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!E35"
+  default_kept: "no"
+silver.entities.orders.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 36945686033e412cf6165636f8c8b48eb3b3f4b51d7c6d93ec55d937c8d0111d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G7"
+  default_kept: "yes"
+silver.entities.order_items.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G25"
+  default_kept: "yes"
+silver.entities.payments.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G34"
+  default_kept: "no"
+silver.entities.reviews.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G41"
+  default_kept: "yes"
+silver.entities.customers.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G51"
+  default_kept: "yes"
+silver.entities.products.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G58"
+  default_kept: "yes"
+silver.entities.sellers.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G69"
+  default_kept: "yes"
+silver.entities.geolocation.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 266cb3dad1008de63d2cd43dff5feca8411a5841424aa204fc0ee0b02bf24821
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G75"
+  default_kept: "yes"
+silver.entities.categories.hard_rejects:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!G82"
+  default_kept: "yes"
+silver.entities.orders.hard_rejects.carrier_before_approval.predicate:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6a1327d1a4596d53d2547253d4b8b1da2f5b6286a792fb750e6359b9cf18ef1a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!D7"
+  default_kept: "no"
+silver.entities.orders.hard_rejects.delivered_without_date.predicate:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0ab5f4286c3979168cb87f89edd9fd878fef94d6c1816dc6ae285e14263880a7
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!D8"
+  default_kept: "no"
+silver.entities.geolocation.hard_rejects.outside_brazil.predicate:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 83b639608d4cbc2f2f212711ff3553f89371c87f40dcbeed78665486c8ae1601
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!D75"
+  default_kept: "no"
+silver.entities.orders.hard_rejects.carrier_before_approval.reason:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f73700c2f026d9cec350a151723397a192eebd3f8cb6d9ad59df185007162fdd
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!E7"
+  default_kept: "no"
+silver.entities.orders.hard_rejects.delivered_without_date.reason:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 2d2c91a8553e7176478f2e7f0d8586f41d5b8aaa22b0021676c13e588876d38e
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!E8"
+  default_kept: "no"
+silver.entities.geolocation.hard_rejects.outside_brazil.reason:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: ad53f211ee11dc58fa0b9f2d8874b3f5de29f38d3749de69d5eed8cacda5fefd
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Data quality!E75"
+  default_kept: "no"
+silver.entities.orders.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O6"
+  default_kept: "yes"
+silver.entities.order_items.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O7"
+  default_kept: "yes"
+silver.entities.payments.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O8"
+  default_kept: "yes"
+silver.entities.reviews.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O9"
+  default_kept: "yes"
+silver.entities.customers.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O10"
+  default_kept: "yes"
+silver.entities.products.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O11"
+  default_kept: "yes"
+silver.entities.sellers.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O12"
+  default_kept: "yes"
+silver.entities.geolocation.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O13"
+  default_kept: "yes"
+silver.entities.categories.dead_letter_tolerance_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!O14"
+  default_kept: "yes"
+silver.entities.orders.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P6"
+  default_kept: "yes"
+silver.entities.order_items.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P7"
+  default_kept: "yes"
+silver.entities.payments.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P8"
+  default_kept: "yes"
+silver.entities.reviews.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P9"
+  default_kept: "yes"
+silver.entities.customers.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P10"
+  default_kept: "yes"
+silver.entities.products.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P11"
+  default_kept: "yes"
+silver.entities.sellers.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P12"
+  default_kept: "yes"
+silver.entities.geolocation.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P13"
+  default_kept: "yes"
+silver.entities.categories.tolerance_source:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!P14"
+  default_kept: "yes"
+silver.entities.orders.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30bc4b16796cc7f54dcd9b0c8530115180dd3d8a54b1f56515116d5b0e45a2db
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F6"
+  default_kept: "yes"
+silver.entities.order_items.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30bc4b16796cc7f54dcd9b0c8530115180dd3d8a54b1f56515116d5b0e45a2db
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F7"
+  default_kept: "yes"
+silver.entities.payments.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30bc4b16796cc7f54dcd9b0c8530115180dd3d8a54b1f56515116d5b0e45a2db
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F8"
+  default_kept: "yes"
+silver.entities.reviews.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30bc4b16796cc7f54dcd9b0c8530115180dd3d8a54b1f56515116d5b0e45a2db
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F9"
+  default_kept: "yes"
+silver.entities.customers.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30bc4b16796cc7f54dcd9b0c8530115180dd3d8a54b1f56515116d5b0e45a2db
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F10"
+  default_kept: "yes"
+silver.entities.products.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30bc4b16796cc7f54dcd9b0c8530115180dd3d8a54b1f56515116d5b0e45a2db
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F11"
+  default_kept: "yes"
+silver.entities.sellers.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30bc4b16796cc7f54dcd9b0c8530115180dd3d8a54b1f56515116d5b0e45a2db
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F12"
+  default_kept: "yes"
+silver.entities.geolocation.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a3021aea224ee9680101ccd62dbe2249f3ddda443c5208bfc04da133576ee866
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F13"
+  default_kept: "yes"
+silver.entities.categories.merge.strategy:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30bc4b16796cc7f54dcd9b0c8530115180dd3d8a54b1f56515116d5b0e45a2db
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!F14"
+  default_kept: "yes"
+silver.entities.orders.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H6"
+  default_kept: "yes"
+silver.entities.order_items.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H7"
+  default_kept: "yes"
+silver.entities.payments.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H8"
+  default_kept: "yes"
+silver.entities.reviews.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H9"
+  default_kept: "yes"
+silver.entities.customers.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H10"
+  default_kept: "yes"
+silver.entities.products.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H11"
+  default_kept: "yes"
+silver.entities.sellers.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H12"
+  default_kept: "yes"
+silver.entities.geolocation.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H13"
+  default_kept: "no"
+silver.entities.categories.merge.partition_column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!H14"
+  default_kept: "yes"
+silver.entities.orders.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A6"
+  default_kept: "yes"
+silver.entities.order_items.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A7"
+  default_kept: "yes"
+silver.entities.payments.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A8"
+  default_kept: "yes"
+silver.entities.reviews.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A9"
+  default_kept: "yes"
+silver.entities.customers.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A10"
+  default_kept: "yes"
+silver.entities.products.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A11"
+  default_kept: "yes"
+silver.entities.sellers.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A12"
+  default_kept: "yes"
+silver.entities.geolocation.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A13"
+  default_kept: "yes"
+silver.entities.categories.flags:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A14"
+  default_kept: "yes"
+silver.entities.orders.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 77377596e103301faf9b833b5b29d1753b5e4627c216ebd12066dec57c4c0c35
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A6"
+  default_kept: "yes"
+silver.entities.order_items.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 011cfe5fc428e09ed0ddaf654305779146f30c2bb8a227bdaeb933a732ec37a0
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A7"
+  default_kept: "yes"
+silver.entities.payments.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A8"
+  default_kept: "yes"
+silver.entities.reviews.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A9"
+  default_kept: "yes"
+silver.entities.customers.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A10"
+  default_kept: "yes"
+silver.entities.products.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: ae0182b72b8ff345cb5b1d646e82976b0585dcd0c714e8f6a658c97efbe51e03
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A11"
+  default_kept: "yes"
+silver.entities.sellers.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A12"
+  default_kept: "yes"
+silver.entities.geolocation.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A13"
+  default_kept: "yes"
+silver.entities.categories.lookups:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A14"
+  default_kept: "yes"
+silver.entities.orders.lookups.cust.reference:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 055ab105b7156113b812cde9f7e935768c6d5899150523cd269ba767fb4f8d7f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!D7"
+  default_kept: "no"
+silver.entities.order_items.lookups.ord.reference:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6b93dcf0ea82370276a861dd96eaffa3a2f80edd241ed8e94cdef4009def374a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!D8"
+  default_kept: "no"
+silver.entities.products.lookups.cat.reference:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: dcb1a2e4822f96c6e599e3a46148afdf2b4241a09ee307306035e5eceabd0970
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!D9"
+  default_kept: "no"
+silver.entities.orders.lookups.cust.on:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b0949bf290466bb807edb2af3ea98c0e13c6867e8313c5570e5fc776eb4f8e88
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!E7"
+  default_kept: "no"
+silver.entities.order_items.lookups.ord.on:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 7a008077464a2901b7d164fe12fc53fae2554d97e10a4af763999ac6c7b45ce0
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!E8"
+  default_kept: "no"
+silver.entities.products.lookups.cat.on:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f8f89478f2cbbf6a89b579fbe1f581859bcc392bf9710ed6da101542dbfbccec
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!E9"
+  default_kept: "no"
+silver.entities.orders.lookups.cust.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 2e131b7b4f9665b8efea54de41bfdf958d1f3a07688c32dc7aae17eda11a4071
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!F7"
+  default_kept: "no"
+silver.entities.order_items.lookups.ord.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c3d43404e8f8e61a1cdf4437dd9757c01b10c425fb95a6f3c529f9e1635110bb
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!F8"
+  default_kept: "no"
+silver.entities.products.lookups.cat.columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 2452558f02312789e3d841833af3e073f088b7eb83c6c000d5527542ff43814f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!F9"
+  default_kept: "no"
+silver.entities.orders.lookups.cust.missing:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 93925febdd300cd2150c41a5b98d7522d632c7bebc0b390034002d5c96badb4d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!G7"
+  default_kept: "no"
+silver.entities.order_items.lookups.ord.missing:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9d13b1bce40a105f17fefd9e747a8acda007392d70c2cdcb35e8227b1e9195a7
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!G8"
+  default_kept: "no"
+silver.entities.products.lookups.cat.missing:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 93925febdd300cd2150c41a5b98d7522d632c7bebc0b390034002d5c96badb4d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Lookups & flags!G9"
+  default_kept: "no"
+silver.entities.orders.masking.customer_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: afb7c1f78d01251dcc47e5cf4b534de1221f70e408dca63475664424e3f3870c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Classification!D7"
+  default_kept: "yes"
+silver.entities.reviews.masking.review_comment_title:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Classification!D29"
+  default_kept: "yes"
+silver.entities.reviews.masking.review_comment_message:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 73dbb564bcbe8296297d68e95589b0e1b7f0cb9da983e5849554edcf17ab86c5
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Classification!D30"
+  default_kept: "yes"
+silver.entities.customers.masking.customer_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: afb7c1f78d01251dcc47e5cf4b534de1221f70e408dca63475664424e3f3870c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Classification!D33"
+  default_kept: "yes"
+silver.entities.customers.masking.customer_unique_id:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: afb7c1f78d01251dcc47e5cf4b534de1221f70e408dca63475664424e3f3870c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Classification!D34"
+  default_kept: "yes"
+silver.entities.customers.masking.customer_zip_code_prefix:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: afb7c1f78d01251dcc47e5cf4b534de1221f70e408dca63475664424e3f3870c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Classification!D35"
+  default_kept: "yes"
+silver.entities.orders.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A6"
+  default_kept: "no"
+silver.entities.order_items.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A7"
+  default_kept: "no"
+silver.entities.payments.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A8"
+  default_kept: "no"
+silver.entities.reviews.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A9"
+  default_kept: "no"
+silver.entities.customers.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A10"
+  default_kept: "no"
+silver.entities.products.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A11"
+  default_kept: "no"
+silver.entities.sellers.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A12"
+  default_kept: "no"
+silver.entities.geolocation.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A13"
+  default_kept: "no"
+silver.entities.categories.drop_columns:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!A14"
+  default_kept: "no"
+silver.entities.orders.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q6"
+  default_kept: "yes"
+silver.entities.order_items.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q7"
+  default_kept: "yes"
+silver.entities.payments.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q8"
+  default_kept: "yes"
+silver.entities.reviews.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q9"
+  default_kept: "yes"
+silver.entities.customers.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q10"
+  default_kept: "yes"
+silver.entities.products.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q11"
+  default_kept: "yes"
+silver.entities.sellers.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q12"
+  default_kept: "yes"
+silver.entities.geolocation.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q13"
+  default_kept: "yes"
+silver.entities.categories.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Entities!Q14"
+  default_kept: "yes"
+silver.entities.orders.readback_confirmed:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6c76a9331e7f5ff9db2754d119a61395717be0c0877d0d8bd462197dff961e4c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "After first load!E6"
+  default_kept: "no"
+silver.entities.payments.readback_confirmed:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6c76a9331e7f5ff9db2754d119a61395717be0c0877d0d8bd462197dff961e4c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "After first load!E7"
+  default_kept: "no"
+silver.entities.geolocation.readback_confirmed:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6c76a9331e7f5ff9db2754d119a61395717be0c0877d0d8bd462197dff961e4c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "After first load!E8"
+  default_kept: "no"

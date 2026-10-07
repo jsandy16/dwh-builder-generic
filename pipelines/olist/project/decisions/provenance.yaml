@@ -1,0 +1,130 @@
+policies.calendar.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6034f2842bf886c7d65be8745b6e05fd279c9b45f25846d69c4a6f77e9060adf
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Reporting policy!G7"
+  default_kept: "yes"
+policies.calendar.week_start:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 7299016fb7176309307da612499e576f5c2786c9f7ee77f355a93841342338fb
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Reporting policy!G8"
+  default_kept: "yes"
+policies.money.scale:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc11310c456c3690d5a74c23aa31cc25b4e74cdae146c71e54ad9dbc1d109fde
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Reporting policy!G9"
+  default_kept: "yes"
+project.name:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f72fc763e555324c37c2722aa712c1ea287fc730926080fc83b7b0f50ff01eef
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Project!G6"
+  default_kept: "yes"
+project.profile:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 079c9d12005aad817f722d2f0a34ccc3185b5ec0ce06ee243f945e4e1bb7b4c7
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Project!G7"
+  default_kept: "yes"
+project.builder:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 32d39bfb69d87b1b51c245a16607c80e2ee76e2d9f74cced5cce9cd6ff9f8887
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Project!G8"
+  default_kept: "yes"
+people:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a8fc68d402bf37d5f3fddb2ebabdca8fad30de7d6b42abf21688159d662d272d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "People!A6"
+  default_kept: "no"
+people.sandeep.name:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a89ba8bcc2e5dfadd055e51f21902a18cb361cd5a53e8b58a75ca685d33b3371
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "People!B7"
+  default_kept: "yes"
+people.sandeep.email:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "People!C7"
+  default_kept: "no"
+people.sandeep.roles:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 34643c8c711ba344d87a82c88e86b7935b368af176f04da74027e56f7624f108
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "People!D7"
+  default_kept: "yes"
+policies.compliance:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Governance!G6"
+  default_kept: "yes"
+policies.egress:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a76360066147aa8a69e5bdc925e21228ef3f2e1238025dc9c465b5959b6f989d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Governance!G7"
+  default_kept: "yes"
+policies.timezone.reporting:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cf1a574339dfbe5058c550c7b11fbfd5a851eec28b45b41138030cdfebdc1d42
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Reporting policy!G6"
+  default_kept: "yes"

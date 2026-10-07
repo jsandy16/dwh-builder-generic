@@ -1,0 +1,39 @@
+sellers:
+  sources:
+  - sellers
+  columns:
+    seller_id:
+      type: VARCHAR
+    seller_zip_code_prefix:
+      type: VARCHAR
+    seller_city:
+      type: VARCHAR
+    seller_state:
+      type: VARCHAR
+  mapping:
+    sellers:
+      seller_id: seller_id
+      seller_zip_code_prefix: "lpad(seller_zip_code_prefix, 5, '0')"
+      seller_city: seller_city
+      seller_state: seller_state
+  natural_key:
+  - seller_id
+  tiebreaker:
+  - seller_id ASC
+  merge:
+    strategy: partition_replace
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  null_policy:
+    seller_id: drop
+    seller_zip_code_prefix: keep
+    seller_city: keep
+    seller_state: keep
+  hard_rejects: "none"
+  valid_anomalies: "none"
+  lookups: "NA"
+  flags: "NA"
+  drop_columns: "NA"

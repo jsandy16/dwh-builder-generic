@@ -1,0 +1,11 @@
+{
+  "checks": [],
+  "facts": {
+    "landed_rows": 0,
+    "rejected_files": 0,
+    "skipped_batches": 17
+  },
+  "layer": "bronze",
+  "passed": true,
+  "scope": "all"
+}

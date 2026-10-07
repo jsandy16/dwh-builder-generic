@@ -1,0 +1,282 @@
+title: Gold metrics from metric cards (dwh-gold)
+validators: [gold_metrics]
+fields:
+  - path: policies.calendar.type
+    section: Project policy
+    level: M*
+    owner: PO
+    gate: A
+    type: enum
+    choices: [gregorian, fiscal_445, fiscal_454, fiscal_544]
+    prompt: Reporting calendar (v1 builds gregorian; fiscal calendars arrive with the governed phase).
+    why: week/month/period-to-date boundaries change every number
+  - path: policies.calendar.week_start
+    section: Project policy
+    level: M*
+    owner: PO
+    gate: A
+    type: enum
+    choices: [monday, sunday]
+    prompt: First day of the week.
+  - path: policies.money.scale
+    section: Project policy
+    level: M*
+    owner: PO
+    gate: A
+    type: int
+    prompt: Decimal places for money amounts (e.g. 2).
+    why: money must be exact decimal at a declared scale
+  - path: metrics
+    section: Metric cards
+    level: M
+    owner: PO
+    gate: A
+    type: map
+    min_items: 1
+    prompt: "One card per metric, keyed by metric name. The card — not the SQL — is the source of truth."
+  - path: metrics.*.entity
+    section: Metric cards
+    level: M
+    owner: DE
+    gate: A
+    validate: [silver_entity]
+    prompt: Silver entity the metric is computed from.
+  - path: metrics.*.plain_definition
+    section: Metric cards
+    level: M
+    owner: PO
+    gate: A
+    type: text
+    prompt: What a business person means by this number, in one sentence.
+  - path: metrics.*.metric_type
+    section: Metric cards
+    level: M*
+    owner: PO
+    gate: A
+    type: enum
+    choices: [sum, count, distinct_count, ratio, average]
+    prompt: "sum / count / distinct_count / ratio (numerator ÷ denominator) / average (treated as a ratio)."
+    why: the type decides how the metric may be rolled up on a dashboard
+  - path: metrics.*.numerator.measure
+    section: Formula
+    level: M*
+    owner: PO
+    gate: A
+    type: measure
+    validate: ["measure_of:metric:{1}"]
+    prompt: "What is summed or counted: count | sum:<column> | count_distinct:<column>.
+      (For non-ratio metrics this is the metric itself; for an average use metric_type average.)"
+    why: the formula is the business meaning; the agent may not draft it
+  - path: metrics.*.numerator.filter
+    section: Formula
+    level: M*
+    owner: PO
+    gate: A
+    type: sql_predicate
+    none_only: "true"
+    validate: ["sql_predicate:metric:{1}"]
+    prompt: "Which rows count in the numerator, e.g. status = 'churned' — or 'none'."
+  - path: metrics.*.denominator.measure
+    section: Formula
+    level: C*
+    owner: PO
+    gate: A
+    type: measure
+    condition: {in: ["metrics.{1}.metric_type", [ratio, average]]}
+    validate: ["measure_of:metric:{1}"]
+    prompt: What the numerator is divided by.
+  - path: metrics.*.denominator.include.column
+    section: Formula
+    level: C*
+    owner: PO
+    gate: A
+    type: column
+    condition: {eq: ["metrics.{1}.metric_type", ratio]}
+    validate: ["column_of:metric:{1}"]
+    prompt: "Column that decides who is in the denominator population (e.g. status, payment_type)."
+    why: the denominator is the #1 place a plausible metric is wrong
+  - path: metrics.*.denominator.include.values
+    section: Formula
+    level: C*
+    owner: PO
+    gate: A
+    type: list
+    condition: {eq: ["metrics.{1}.metric_type", ratio]}
+    prompt: "Values that ARE in the denominator (an inclusion list: a value nobody has classified yet
+      stops the build instead of silently joining the denominator)."
+  - path: metrics.*.denominator.exclude.values
+    section: Formula
+    level: C*
+    owner: PO
+    gate: A
+    type: list
+    none_only: "true"
+    condition: {eq: ["metrics.{1}.metric_type", ratio]}
+    prompt: "Values deliberately NOT in the denominator, with the reason in plain_definition — or 'none'."
+  - path: metrics.*.filters
+    section: Formula
+    level: M*
+    owner: PO
+    gate: A
+    type: sql_predicate
+    none_only: "true"
+    validate: ["sql_predicate:metric:{1}"]
+    prompt: "Rows excluded from the metric entirely (both numerator and denominator) — or 'none'."
+  - path: metrics.*.zero_denominator
+    section: Formula
+    level: C*
+    owner: PO
+    gate: A
+    type: enum
+    choices: ["null", zero, omit]
+    condition: {in: ["metrics.{1}.metric_type", [ratio, average]]}
+    prompt: "When nothing is in the denominator: null (show as blank), zero (show 0), or omit the row."
+    why: "0.0 vs NULL changes averages and headlines (churn 11.58% pooled vs 10.75% with zeros)"
+  - path: metrics.*.population
+    section: Formula
+    level: O
+    owner: PO
+    gate: A
+    type: text
+    prompt: "Required when an input column is imputed or structurally null: state which rows count
+      (e.g. 'passenger averages exclude services that do not report passengers')."
+    consequence: checked at build — required if any input is imputed or structural
+  - path: metrics.*.grain
+    section: Shape
+    level: M*
+    owner: PO
+    gate: A
+    type: columns
+    validate: ["columns_of:metric:{1}"]
+    prompt: One row per … (list of columns), e.g. [event_date, region, plan_name].
+    why: a wrong grain double-counts silently
+  - path: metrics.*.time_grain
+    section: Shape
+    level: M*
+    owner: PO
+    gate: A
+    type: enum
+    choices: [day, week, month, quarter, year]
+    prompt: Time bucket applied to the date basis column.
+  - path: metrics.*.date_basis
+    section: Shape
+    level: M
+    owner: PO
+    gate: A
+    type: column
+    validate: ["column_of:metric:{1}"]
+    prompt: Which date column assigns a row to a period (must be one of the grain columns).
+  - path: metrics.*.unit
+    section: Shape
+    level: M
+    owner: PO
+    gate: A
+    prompt: "count | percent | currency:<ISO code> | other unit text."
+  - path: metrics.*.precision
+    section: Shape
+    level: M
+    owner: PO
+    gate: A
+    type: int
+    prompt: Decimal places in the published value (rounding happens once, at aggregation).
+  - path: metrics.*.additivity
+    section: Shape
+    level: M
+    owner: PO
+    gate: A
+    type: enum
+    choices: [additive, semi_additive, non_additive]
+    prompt: "Can it be summed across rows? additive = yes; non_additive = no (ratios: the dashboard
+      recomputes from numerator and denominator); semi_additive = not across time (balances)."
+    why: averaging daily ratios gives a different, wrong headline
+  - path: metrics.*.valid_range.min
+    section: Checks
+    level: M
+    owner: PO
+    gate: A
+    type: number
+    none_only: "true"
+    prompt: Lowest plausible value (or 'none').
+  - path: metrics.*.valid_range.max
+    section: Checks
+    level: M
+    owner: PO
+    gate: A
+    type: number
+    none_only: "true"
+    prompt: Highest plausible value (or 'none').
+  - path: metrics.*.cadence
+    section: Checks
+    level: M
+    owner: PO
+    gate: A
+    type: enum
+    choices: [daily, weekly, monthly]
+    prompt: How often the metric is refreshed.
+  - path: metrics.*.dispute_owner
+    section: Ownership
+    level: M*
+    pending_ok: "true"
+    owner: PO
+    gate: A
+    type: person
+    validate: ["person_with_role:PO"]
+    prompt: The named person who arbitrates what this metric means.
+    why: a metric nobody owns cannot be corrected when it is disputed
+  - path: metrics.*.golden_values
+    section: Ownership
+    level: M*
+    pending_ok: "true"
+    owner: PO
+    gate: A
+    type: golden_values
+    prompt: "At least 3 values the owner computed BY HAND from the raw data:
+      - {key: {<grain col>: <value>, …}, value: <number or null>}. Asserted on every build."
+    why: the only check that catches a formula that is valid SQL but means something else
+  - path: metrics.*.version
+    section: Ownership
+    level: M
+    owner: DE
+    gate: A
+    default: 1.0.0
+    prompt: Card version (a change of meaning is a breaking change).
+  - path: metrics.*.effective_from
+    section: Ownership
+    level: M
+    owner: DE
+    gate: A
+    type: date
+    prompt: Date this definition takes effect (YYYY-MM-DD).
+  - path: metrics.*.reconciliation.control
+    section: Reconciliation
+    level: M
+    owner: DE
+    gate: A
+    type: measure
+    validate: ["measure_of:metric:{1}"]
+    prompt: "Silver control total this metric ties back to, e.g. sum:mrr_amount or count.
+      For a ratio this reconciles the denominator."
+  - path: metrics.*.reconciliation.excluded_by
+    section: Reconciliation
+    level: M
+    owner: DE
+    gate: A
+    type: sql_predicate
+    none_only: "true"
+    validate: ["sql_predicate:metric:{1}"]
+    prompt: "Rows of silver deliberately outside this metric (e.g. status <> 'active'), or 'none'.
+      Checked per grain key: metric + excluded = control."
+  - path: metrics.*.reconciliation.max_excluded_pct
+    section: Reconciliation
+    level: M
+    owner: PO
+    gate: A
+    type: percent
+    prompt: Fail if the excluded share exceeds this % (stops an exclusion becoming a blanket waiver).
+  - path: metrics.*.target_table
+    section: Output
+    level: M
+    owner: DE
+    gate: A
+    validate: [identifier]
+    prompt: Gold table name (metrics sharing a table must share entity, grain and time grain).

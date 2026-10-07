@@ -1,0 +1,85 @@
+title: Project setup (dwh-init)
+validators: [people_roles]
+fields:
+  - path: project.name
+    section: Project
+    level: M
+    owner: DE
+    gate: A
+    prompt: Short project name (letters, digits, hyphens).
+    why: names the warehouse and every artefact
+  - path: project.profile
+    section: Project
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [fast, governed, demo]
+    prompt: "fast = prototype/first dashboard (★ answers may wait, publishing to consumers blocked);
+      governed = production (every ★ answered and approved by someone other than the builder);
+      demo = fast + replay clock and offline demo settings."
+    why: decides how strictly human-owned answers and approvals are enforced
+  - path: project.builder
+    section: Project
+    level: M
+    owner: DE
+    gate: A
+    type: person
+    validate: ["person_with_role:DE"]
+    prompt: Person id (from people below) of the engineer running the build.
+    why: approvals by the builder are flagged, and blocked in the governed profile
+  - path: people
+    section: People
+    level: M
+    owner: DE
+    gate: A
+    type: map
+    min_items: 1
+    prompt: "Everyone who answers or approves: id → {name, email, roles}. Roles: DE (data engineer),
+      PO (product owner), SME (business rules), GOV (governance), CON (consumer owner).
+      One person may hold several roles."
+    why: human-owned answers are only valid when given by a listed person holding the owner role
+  - path: people.*.name
+    section: People
+    level: M
+    owner: DE
+    gate: A
+    prompt: Full name.
+  - path: people.*.email
+    section: People
+    level: O
+    owner: DE
+    gate: A
+    prompt: Email (used on tickets and approvals).
+    consequence: no contact address on approvals
+  - path: people.*.roles
+    section: People
+    level: M
+    owner: DE
+    gate: A
+    type: list
+    choices: [DE, PO, SME, GOV, CON]
+    prompt: Roles this person holds.
+  - path: policies.compliance
+    section: Governance policies
+    level: M*
+    pending_ok: "true"
+    owner: GOV
+    gate: A
+    type: enum
+    choices: [none, gdpr, hipaa, gxp]
+    prompt: "Regulatory regime for this data ('none' is a valid answer). Note: dwh_core v1 records gdpr/hipaa/gxp
+      but does not yet switch on the regulated-mode controls, so it will not release such data to consumers."
+    why: a regulated regime switches on audit features; it is a governance decision
+  - path: policies.egress
+    section: Governance policies
+    level: M*
+    pending_ok: "true"
+    owner: GOV
+    gate: A
+    type: enum
+    choices: [stats_only, samples_allowed, none]
+    prompt: "What the AI assistant may see from the data: stats_only = counts and distributions only
+      (recommended for regulated data); samples_allowed = example values from public/internal columns;
+      none = nothing beyond row counts."
+    why: decides whether row values ever leave the machine in profiles or artefacts

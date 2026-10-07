@@ -1,0 +1,70 @@
+{
+  "approved": false,
+  "approved_by": null,
+  "gold_verified_at": "2026-10-07T07:40:42+00:00",
+  "pending_decisions": [
+    {
+      "due": "",
+      "owner": "sandeep",
+      "path": "metrics.orders_placed.golden_values"
+    },
+    {
+      "due": "",
+      "owner": "sandeep",
+      "path": "metrics.gmv.golden_values"
+    },
+    {
+      "due": "",
+      "owner": "sandeep",
+      "path": "metrics.avg_order_value.golden_values"
+    },
+    {
+      "due": "",
+      "owner": "sandeep",
+      "path": "metrics.on_time_delivery_rate.golden_values"
+    },
+    {
+      "due": "",
+      "owner": "sandeep",
+      "path": "metrics.avg_review_score.golden_values"
+    },
+    {
+      "due": "",
+      "owner": "sandeep",
+      "path": "metrics.cancellation_rate.golden_values"
+    }
+  ],
+  "profile": "fast",
+  "published_at": "2026-10-07T07:40:57+00:00",
+  "run_id": "20261007T074057-1253",
+  "snapshot": "snap_20261007T074057-1253",
+  "spec_hash": "bcbb9fd0557254352f641e35d8d34d4446ae09402b224423d38cc3123746da5f",
+  "synthetic_data": false,
+  "tables": {
+    "gold_avg_order_value_day": {
+      "rows": 79,
+      "sha256": "95a0ca053daaa1400ca5d65937a5b058145af1bda2796cc4b031bb14d86eb739"
+    },
+    "gold_avg_review_score_day": {
+      "rows": 108,
+      "sha256": "29c87c074057d2628a810bc1dfd11d54a5c9c4a1e534a5e2db76ebbc1eb7601a"
+    },
+    "gold_cancellation_rate_day": {
+      "rows": 83,
+      "sha256": "a7f85eafb8399949c40db859debf6e94eb7c24794332cbb38f6827781c916d12"
+    },
+    "gold_gmv_day": {
+      "rows": 79,
+      "sha256": "57bad69494f20404129d88d87d32c942e23a7e79665ab19254cbc85cc45ecc1f"
+    },
+    "gold_on_time_delivery_rate_day": {
+      "rows": 83,
+      "sha256": "f9c45465ab2dfbad9646b49352259fe97ef550c7ff629b981e04a793e9127373"
+    },
+    "gold_orders_placed_day": {
+      "rows": 932,
+      "sha256": "7b15b3e906ae669ae80ed4d5832ba6c2349338b9218b5b8b6d0fc479b00f6b62"
+    }
+  },
+  "target": "local"
+}

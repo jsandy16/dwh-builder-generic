@@ -1,0 +1,41 @@
+payments:
+  sources:
+  - payments
+  columns:
+    order_id:
+      type: VARCHAR
+    payment_sequential:
+      type: BIGINT
+    payment_type:
+      type: VARCHAR
+    payment_installments:
+      type: BIGINT
+    payment_value:
+      type: "DECIMAL(18,2)"
+  natural_key:
+  - order_id
+  - payment_sequential
+  tiebreaker:
+  - order_id ASC
+  merge:
+    strategy: partition_replace
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  valid_anomalies:
+    zero_value:
+      predicate: payment_value = 0
+      reason: payments fully covered by vouchers are real and carry value 0
+  null_policy:
+    order_id: drop
+    payment_sequential: drop
+    payment_type: keep
+    payment_installments: keep
+    payment_value: keep
+  hard_rejects: "none"
+  lookups: "NA"
+  flags: "NA"
+  drop_columns: "NA"
+  readback_confirmed: "yes"

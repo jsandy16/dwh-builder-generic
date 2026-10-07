@@ -1,0 +1,42 @@
+avg_order_value:
+  entity: order_items
+  plain_definition: "Average item value per order placed that day (sum of item prices ÷ number of orders),\
+    \ same exclusions as GMV."
+  metric_type: average
+  numerator:
+    measure: "sum:price"
+    filter: "none"
+  denominator:
+    measure: "count_distinct:order_id"
+  filters: "ord_order_status NOT IN ('canceled', 'unavailable')"
+  zero_denominator: "null"
+  population: "NA"
+  grain:
+  - ord_order_purchase_timestamp
+  time_grain: day
+  date_basis: ord_order_purchase_timestamp
+  unit: "currency:BRL"
+  precision: "2"
+  additivity: non_additive
+  valid_range:
+    min: "0"
+    max: "none"
+  cadence: daily
+  dispute_owner: sandeep
+  version: "1.0.0"
+  effective_from: '2026-10-07'
+  reconciliation:
+    control: "count_distinct:order_id"
+    excluded_by: "ord_order_status IN ('canceled', 'unavailable')"
+    max_excluded_pct: "10"
+  target_table: gold_avg_order_value_day
+  golden_values:
+  - key:
+      ord_order_purchase_timestamp: '2017-02-12'
+    value: "243.52"
+  - key:
+      ord_order_purchase_timestamp: '2017-02-15'
+    value: "112.84"
+  - key:
+      ord_order_purchase_timestamp: '2016-10-03'
+    value: "63.14"

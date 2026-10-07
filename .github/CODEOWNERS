@@ -1,0 +1,27 @@
+# Who must review what. Later lines win. Replace the handles with your team's GitHub users or
+# teams; the comments say which role each path belongs to (DE / PO / SME / GOV, see docs/guide.md).
+
+*                                   @jsandy16
+
+# Framework and tooling: framework maintainers
+/framework/                         @jsandy16
+/skills/                            @jsandy16
+/validation/                        @jsandy16
+/tools/                             @jsandy16
+/.github/                           @jsandy16
+
+# Pipelines, per role. Add a block per pipeline when owners differ between pipelines.
+# GOV + PO: compliance, egress, time zone
+/pipelines/*/project/policies.yaml  @jsandy16
+# DE: people and roles
+/pipelines/*/project/people.yaml    @jsandy16
+# DE (classification inside: GOV)
+/pipelines/*/bronze/specs/          @jsandy16
+# DE + SME: business rules
+/pipelines/*/silver/specs/          @jsandy16
+# PO: metric cards and golden values
+/pipelines/*/gold/specs/            @jsandy16
+# PO: dashboard
+/pipelines/*/serve/specs/           @jsandy16
+# GOV: approvals, releases, decision records
+/pipelines/*/governance/            @jsandy16

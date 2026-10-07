@@ -1,0 +1,54 @@
+serve:
+  row_security: "none"
+  title: Olist marketplace — development (batch 01)
+  audience: Sandeep (developer) and product review
+  runtime: streamlit
+  reference_clock: replay
+  filters:
+  - cust_customer_state
+  port: "NA"
+  auto_refresh_seconds: "NA"
+  kpis:
+    orders:
+      metric: orders_placed
+      label: Orders placed
+    gmv:
+      metric: gmv
+      label: GMV (BRL)
+    aov:
+      metric: avg_order_value
+      label: Average order value (BRL)
+    on_time:
+      metric: on_time_delivery_rate
+      label: On-time delivery
+    review:
+      metric: avg_review_score
+      label: Average review score
+    cancel:
+      metric: cancellation_rate
+      label: Cancellations
+  charts:
+    orders_by_state:
+      metric: orders_placed
+      title: Orders by customer state
+      type: bar
+      x: cust_customer_state
+      color: "NA"
+    orders_trend:
+      metric: orders_placed
+      title: Orders per day
+      type: line
+      x: order_purchase_timestamp
+      color: "NA"
+    gmv_trend:
+      metric: gmv
+      title: GMV per day
+      type: line
+      x: ord_order_purchase_timestamp
+      color: "NA"
+    on_time_trend:
+      metric: on_time_delivery_rate
+      title: On-time delivery per day
+      type: line
+      x: order_purchase_timestamp
+      color: "NA"

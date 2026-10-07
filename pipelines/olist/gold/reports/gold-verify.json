@@ -1,0 +1,501 @@
+{
+  "checks": [
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 127,
+      "expected": 0,
+      "fatal": true,
+      "id": "GRAIN-gold_avg_order_value_day",
+      "name": "gold_avg_order_value_day: one row per grain (ord_order_purchase_timestamp)",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 127,
+      "expected": 0,
+      "fatal": true,
+      "id": "RANGE-avg_order_value",
+      "name": "avg_order_value: values within [0, none]",
+      "passed": true
+    },
+    {
+      "actual": 243.52,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "243.52",
+      "fatal": true,
+      "id": "V25-avg_order_value-1",
+      "name": "avg_order_value golden value at ord_order_purchase_timestamp=2017-02-12",
+      "passed": true
+    },
+    {
+      "actual": 112.84,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "112.84",
+      "fatal": true,
+      "id": "V25-avg_order_value-2",
+      "name": "avg_order_value golden value at ord_order_purchase_timestamp=2017-02-15",
+      "passed": true
+    },
+    {
+      "actual": 63.14,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "63.14",
+      "fatal": true,
+      "id": "V25-avg_order_value-3",
+      "name": "avg_order_value golden value at ord_order_purchase_timestamp=2016-10-03",
+      "passed": true
+    },
+    {
+      "actual": "0 key(s) off",
+      "detail": "excluded_by: ord_order_status IN ('canceled', 'unavailable')",
+      "evaluated": 129,
+      "expected": 0,
+      "fatal": true,
+      "id": "V27-avg_order_value",
+      "name": "avg_order_value: denominator + excluded = silver count_distinct:order_id per grain key",
+      "passed": true
+    },
+    {
+      "actual": "0.99%",
+      "detail": "",
+      "evaluated": 8888,
+      "expected": "<= 10%",
+      "fatal": true,
+      "id": "V28-avg_order_value",
+      "name": "avg_order_value: excluded share within bound",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 152,
+      "expected": 0,
+      "fatal": true,
+      "id": "GRAIN-gold_avg_review_score_day",
+      "name": "gold_avg_review_score_day: one row per grain (review_creation_date)",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 152,
+      "expected": 0,
+      "fatal": true,
+      "id": "RANGE-avg_review_score",
+      "name": "avg_review_score: values within [1, 5]",
+      "passed": true
+    },
+    {
+      "actual": 4.36,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "4.36",
+      "fatal": true,
+      "id": "V25-avg_review_score-1",
+      "name": "avg_review_score golden value at review_creation_date=2017-02-15",
+      "passed": true
+    },
+    {
+      "actual": 4.33,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "4.33",
+      "fatal": true,
+      "id": "V25-avg_review_score-2",
+      "name": "avg_review_score golden value at review_creation_date=2017-02-09",
+      "passed": true
+    },
+    {
+      "actual": 4.35,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "4.35",
+      "fatal": true,
+      "id": "V25-avg_review_score-3",
+      "name": "avg_review_score golden value at review_creation_date=2017-02-18",
+      "passed": true
+    },
+    {
+      "actual": "0 key(s) off",
+      "detail": "excluded_by: none",
+      "evaluated": 152,
+      "expected": 0,
+      "fatal": true,
+      "id": "V27-avg_review_score",
+      "name": "avg_review_score: denominator + excluded = silver count per grain key",
+      "passed": true
+    },
+    {
+      "actual": "0.00%",
+      "detail": "",
+      "evaluated": 6513,
+      "expected": "<= 0%",
+      "fatal": true,
+      "id": "V28-avg_review_score",
+      "name": "avg_review_score: excluded share within bound",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 131,
+      "expected": 0,
+      "fatal": true,
+      "id": "GRAIN-gold_cancellation_rate_day",
+      "name": "gold_cancellation_rate_day: one row per grain (order_purchase_timestamp)",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 131,
+      "expected": 0,
+      "fatal": true,
+      "id": "RANGE-cancellation_rate",
+      "name": "cancellation_rate: values within [0, 100]",
+      "passed": true
+    },
+    {
+      "actual": 0.9,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "0.9",
+      "fatal": true,
+      "id": "V25-cancellation_rate-1",
+      "name": "cancellation_rate golden value at order_purchase_timestamp=2017-02-07",
+      "passed": true
+    },
+    {
+      "actual": 1.0,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "1.0",
+      "fatal": true,
+      "id": "V25-cancellation_rate-2",
+      "name": "cancellation_rate golden value at order_purchase_timestamp=2017-03-06",
+      "passed": true
+    },
+    {
+      "actual": 1.0,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "1.0",
+      "fatal": true,
+      "id": "V25-cancellation_rate-3",
+      "name": "cancellation_rate golden value at order_purchase_timestamp=2017-03-01",
+      "passed": true
+    },
+    {
+      "actual": "0 key(s) off",
+      "detail": "excluded_by: none",
+      "evaluated": 131,
+      "expected": 0,
+      "fatal": true,
+      "id": "V27-cancellation_rate",
+      "name": "cancellation_rate: denominator + excluded = silver count per grain key",
+      "passed": true
+    },
+    {
+      "actual": "0.00%",
+      "detail": "",
+      "evaluated": 7931,
+      "expected": "<= 0%",
+      "fatal": true,
+      "id": "V28-cancellation_rate",
+      "name": "cancellation_rate: excluded share within bound",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 131,
+      "expected": 0,
+      "fatal": true,
+      "id": "V26a-cancellation_rate",
+      "name": "cancellation_rate: numerator never exceeds denominator",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "not counted: the numerator is (numerator filter AND denominator population). If these rows should count, the denominator definition is wrong \u2014 ask the dispute owner",
+      "evaluated": null,
+      "expected": "reported",
+      "fatal": false,
+      "id": "V26c-cancellation_rate",
+      "name": "cancellation_rate: rows matching the numerator filter outside the denominator",
+      "passed": true
+    },
+    {
+      "actual": [],
+      "detail": "add it to denominator.include.values or exclude.values (\u2605 PO), or filter it out",
+      "evaluated": null,
+      "expected": "none unclassified",
+      "fatal": true,
+      "id": "V26b-cancellation_rate",
+      "name": "cancellation_rate: every order_status value is classified in or out of the denominator",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 127,
+      "expected": 0,
+      "fatal": true,
+      "id": "GRAIN-gold_gmv_day",
+      "name": "gold_gmv_day: one row per grain (ord_order_purchase_timestamp)",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 127,
+      "expected": 0,
+      "fatal": true,
+      "id": "RANGE-gmv",
+      "name": "gmv: values within [0, none]",
+      "passed": true
+    },
+    {
+      "actual": "15098.25",
+      "detail": "",
+      "evaluated": 1,
+      "expected": "15098.25",
+      "fatal": true,
+      "id": "V25-gmv-1",
+      "name": "gmv golden value at ord_order_purchase_timestamp=2017-02-12",
+      "passed": true
+    },
+    {
+      "actual": "6770.15",
+      "detail": "",
+      "evaluated": 1,
+      "expected": "6770.15",
+      "fatal": true,
+      "id": "V25-gmv-2",
+      "name": "gmv golden value at ord_order_purchase_timestamp=2017-02-15",
+      "passed": true
+    },
+    {
+      "actual": "441.98",
+      "detail": "",
+      "evaluated": 1,
+      "expected": "441.98",
+      "fatal": true,
+      "id": "V25-gmv-3",
+      "name": "gmv golden value at ord_order_purchase_timestamp=2016-10-03",
+      "passed": true
+    },
+    {
+      "actual": "0 key(s) off",
+      "detail": "excluded_by: ord_order_status IN ('canceled', 'unavailable')",
+      "evaluated": 129,
+      "expected": 0,
+      "fatal": true,
+      "id": "V27-gmv",
+      "name": "gmv: metric + excluded = silver sum:price per grain key",
+      "passed": true
+    },
+    {
+      "actual": "0.99%",
+      "detail": "",
+      "evaluated": 8888,
+      "expected": "<= 10%",
+      "fatal": true,
+      "id": "V28-gmv",
+      "name": "gmv: excluded share within bound",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 131,
+      "expected": 0,
+      "fatal": true,
+      "id": "GRAIN-gold_on_time_delivery_rate_day",
+      "name": "gold_on_time_delivery_rate_day: one row per grain (order_purchase_timestamp)",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "5 NULL value(s) not range-checked",
+      "evaluated": 126,
+      "expected": 0,
+      "fatal": true,
+      "id": "RANGE-on_time_delivery_rate",
+      "name": "on_time_delivery_rate: values within [0, 100]",
+      "passed": true
+    },
+    {
+      "actual": 98.1,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "98.1",
+      "fatal": true,
+      "id": "V25-on_time_delivery_rate-1",
+      "name": "on_time_delivery_rate golden value at order_purchase_timestamp=2017-02-07",
+      "passed": true
+    },
+    {
+      "actual": 95.7,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "95.7",
+      "fatal": true,
+      "id": "V25-on_time_delivery_rate-2",
+      "name": "on_time_delivery_rate golden value at order_purchase_timestamp=2017-03-06",
+      "passed": true
+    },
+    {
+      "actual": 98.4,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "98.4",
+      "fatal": true,
+      "id": "V25-on_time_delivery_rate-3",
+      "name": "on_time_delivery_rate golden value at order_purchase_timestamp=2017-02-12",
+      "passed": true
+    },
+    {
+      "actual": "0 key(s) off",
+      "detail": "excluded_by: order_status <> 'delivered'",
+      "evaluated": 131,
+      "expected": 0,
+      "fatal": true,
+      "id": "V27-on_time_delivery_rate",
+      "name": "on_time_delivery_rate: denominator + excluded = silver count per grain key",
+      "passed": true
+    },
+    {
+      "actual": "6.00%",
+      "detail": "",
+      "evaluated": 7931,
+      "expected": "<= 60%",
+      "fatal": true,
+      "id": "V28-on_time_delivery_rate",
+      "name": "on_time_delivery_rate: excluded share within bound",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 131,
+      "expected": 0,
+      "fatal": true,
+      "id": "V26a-on_time_delivery_rate",
+      "name": "on_time_delivery_rate: numerator never exceeds denominator",
+      "passed": true
+    },
+    {
+      "actual": 5,
+      "detail": "not counted: the numerator is (numerator filter AND denominator population). If these rows should count, the denominator definition is wrong \u2014 ask the dispute owner",
+      "evaluated": null,
+      "expected": "reported",
+      "fatal": false,
+      "id": "V26c-on_time_delivery_rate",
+      "name": "on_time_delivery_rate: rows matching the numerator filter outside the denominator",
+      "passed": true
+    },
+    {
+      "actual": [],
+      "detail": "add it to denominator.include.values or exclude.values (\u2605 PO), or filter it out",
+      "evaluated": null,
+      "expected": "none unclassified",
+      "fatal": true,
+      "id": "V26b-on_time_delivery_rate",
+      "name": "on_time_delivery_rate: every order_status value is classified in or out of the denominator",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 1685,
+      "expected": 0,
+      "fatal": true,
+      "id": "GRAIN-gold_orders_placed_day",
+      "name": "gold_orders_placed_day: one row per grain (order_purchase_timestamp, cust_customer_state)",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "detail": "",
+      "evaluated": 1685,
+      "expected": 0,
+      "fatal": true,
+      "id": "RANGE-orders_placed",
+      "name": "orders_placed: values within [0, none]",
+      "passed": true
+    },
+    {
+      "actual": 48,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "48",
+      "fatal": true,
+      "id": "V25-orders_placed-1",
+      "name": "orders_placed golden value at order_purchase_timestamp=2017-02-07, cust_customer_state=SP",
+      "passed": true
+    },
+    {
+      "actual": 15,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "15",
+      "fatal": true,
+      "id": "V25-orders_placed-2",
+      "name": "orders_placed golden value at order_purchase_timestamp=2017-02-07, cust_customer_state=RJ",
+      "passed": true
+    },
+    {
+      "actual": 7,
+      "detail": "",
+      "evaluated": 1,
+      "expected": "7",
+      "fatal": true,
+      "id": "V25-orders_placed-3",
+      "name": "orders_placed golden value at order_purchase_timestamp=2017-03-04, cust_customer_state=MG",
+      "passed": true
+    },
+    {
+      "actual": "0 key(s) off",
+      "detail": "excluded_by: none",
+      "evaluated": 1685,
+      "expected": 0,
+      "fatal": true,
+      "id": "V27-orders_placed",
+      "name": "orders_placed: metric + excluded = silver count per grain key",
+      "passed": true
+    },
+    {
+      "actual": "0.00%",
+      "detail": "",
+      "evaluated": 7931,
+      "expected": "<= 0%",
+      "fatal": true,
+      "id": "V28-orders_placed",
+      "name": "orders_placed: excluded share within bound",
+      "passed": true
+    }
+  ],
+  "facts": {
+    "gold_avg_order_value_day|rows": 127,
+    "gold_avg_review_score_day|rows": 152,
+    "gold_cancellation_rate_day|rows": 131,
+    "gold_gmv_day|rows": 127,
+    "gold_on_time_delivery_rate_day|rows": 131,
+    "gold_orders_placed_day|rows": 1685,
+    "headline|avg_order_value": 145.69,
+    "headline|avg_review_score": 4.08,
+    "headline|cancellation_rate": 1.2,
+    "headline|gmv": 1125868.55,
+    "headline|on_time_delivery_rate": 94.7,
+    "headline|orders_placed": 7931.0
+  },
+  "layer": "gold",
+  "passed": true,
+  "scope": "all"
+}

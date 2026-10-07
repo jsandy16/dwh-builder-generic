@@ -1,0 +1,3 @@
+pipeline: {{name}}
+note: raw files are not in git; `python tools/data_manifest.py {{name}}` records which files a build used
+files: []

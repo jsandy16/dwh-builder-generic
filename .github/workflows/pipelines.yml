@@ -1,0 +1,31 @@
+name: pipelines
+
+# Every pipeline under pipelines/ — found automatically, so adding a pipeline needs no change here.
+# Checks the folder contract, the intake gates and that generated code matches the specs.
+# CI never approves and never publishes: those are people's actions.
+on:
+  pull_request:
+    paths: ["pipelines/**", "framework/**", "tools/**", ".github/workflows/pipelines.yml"]
+  push:
+    branches: [main]
+    paths: ["pipelines/**", "framework/**", "tools/**", ".github/workflows/pipelines.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pipelines:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: framework/requirements.txt
+      - run: pip install -r framework/requirements.txt
+      - name: Nothing that must stay out of git is committed
+        run: python tools/guard_commit.py $(git ls-files)
+      - name: Contract, gates and generated code for every pipeline
+        run: python tools/check_pipelines.py

@@ -1,0 +1,31 @@
+name: release
+
+# Tag vX.Y.Z on main → package the skills (the kernel goes into dwh-init) and attach them to a
+# GitHub release. The tag must match VERSION in framework/dwh_core/__init__.py.
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Tag matches the kernel version
+        run: |
+          v=$(python -c "import re;print(re.search(r'VERSION = \"([^\"]+)\"', open('framework/dwh_core/__init__.py').read()).group(1))")
+          test "v$v" = "${GITHUB_REF_NAME}" || { echo "tag ${GITHUB_REF_NAME} but kernel VERSION is $v"; exit 1; }
+      - run: python tools/package_skills.py --out dist
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" dist/*.skill \
+            --title "dwh skills ${GITHUB_REF_NAME}" \
+            --notes "Install the .skill files in Claude. See CHANGELOG.md for what changed."

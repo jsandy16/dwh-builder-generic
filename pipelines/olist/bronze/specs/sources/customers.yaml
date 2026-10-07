@@ -1,0 +1,55 @@
+customers:
+  role: dimension
+  connector: local_file
+  location: "data/raw/batch_{batch}/olist_customers_dataset.csv"
+  format: csv
+  load_type: incremental_append
+  redelivery_policy: replace
+  drift_policy: land_and_log
+  freshness:
+    basis: "none"
+  volume:
+    min_rows: "NA"
+    max_rows: "NA"
+  retry_attempts: "3"
+  credentials_env: "NA"
+  profile_split_by: "NA"
+  csv:
+    delimiter: ","
+    header: "yes"
+    quote: "\""
+    escape: "\""
+    encoding: utf-8
+    null_tokens: "NA"
+  schema:
+    columns:
+      customer_id:
+        type: VARCHAR
+        required: "yes"
+        key: "yes"
+        allowed_values: "NA"
+        classification: pii
+      customer_unique_id:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: pii
+      customer_zip_code_prefix:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: pii
+      customer_city:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      customer_state:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal

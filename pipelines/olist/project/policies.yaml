@@ -1,0 +1,10 @@
+policies:
+  compliance: "none"
+  egress: stats_only
+  timezone:
+    reporting: America/Sao_Paulo
+  calendar:
+    type: gregorian
+    week_start: monday
+  money:
+    scale: "2"

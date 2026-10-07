@@ -1,0 +1,54 @@
+reviews:
+  sources:
+  - reviews
+  columns:
+    review_id:
+      type: VARCHAR
+    order_id:
+      type: VARCHAR
+    review_score:
+      type: BIGINT
+    review_comment_title:
+      type: VARCHAR
+    review_comment_message:
+      type: VARCHAR
+    review_creation_date:
+      type: TIMESTAMP
+      formats:
+      - "%Y-%m-%d %H:%M:%S"
+      source_timezone: America/Sao_Paulo
+    review_answer_timestamp:
+      type: TIMESTAMP
+      formats:
+      - "%Y-%m-%d %H:%M:%S"
+      source_timezone: America/Sao_Paulo
+  natural_key:
+  - review_id
+  - order_id
+  tiebreaker:
+  - review_answer_timestamp DESC
+  merge:
+    strategy: partition_replace
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  masking:
+    review_comment_title: drop
+    review_comment_message: drop
+  structural_nulls:
+    "review_comment_title|source=reviews": defect
+  null_policy:
+    review_id: drop
+    order_id: drop
+    review_score: keep
+    review_comment_title: keep
+    review_comment_message: keep
+    review_creation_date: keep
+    review_answer_timestamp: keep
+  hard_rejects: "none"
+  valid_anomalies: "none"
+  lookups: "NA"
+  flags: "NA"
+  drop_columns: "NA"

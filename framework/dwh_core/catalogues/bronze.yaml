@@ -1,0 +1,289 @@
+title: Bronze ingestion (dwh-bronze)
+validators: [sources]
+fields:
+  - path: sources
+    section: Sources
+    level: M
+    owner: DE
+    gate: A
+    type: map
+    min_items: 1
+    prompt: One entry per source feed, keyed by a short name (e.g. yellow_trips, zones).
+    why: bronze lands one table per source, exactly as received
+  - path: sources.*.role
+    section: Sources
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [fact, dimension, reference]
+    prompt: What this feed is.
+  - path: sources.*.connector
+    section: Sources
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [local_file, http_file]
+    prompt: Where files come from (v1 supports local files/folders and plain HTTP(S) files).
+    why: decides how batches are fetched and retried
+  - path: sources.*.location
+    section: Sources
+    level: M
+    owner: DE
+    gate: A
+    type: path_pattern
+    validate: ["batch_token:sources.{1}.load_type"]
+    prompt: "Path (relative to the project) or URL. Put {batch} where the batch id appears,
+      e.g. data/raw/trips_{batch}.csv"
+    why: without it nothing can be ingested
+  - path: sources.*.format
+    section: Sources
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [csv, parquet, json, jsonl, xlsx]
+    prompt: File format.
+  - path: sources.*.csv.delimiter
+    section: CSV dialect (declared, never sniffed)
+    level: C
+    owner: DE
+    gate: A
+    condition: {eq: ["sources.{1}.format", csv]}
+    default: ","
+    prompt: Field delimiter.
+    why: the dialect is declared because sniffing fails or guesses wrong on malformed files
+  - path: sources.*.csv.header
+    section: CSV dialect (declared, never sniffed)
+    level: C
+    owner: DE
+    gate: A
+    type: bool
+    condition: {eq: ["sources.{1}.format", csv]}
+    default: "yes"
+    prompt: Does the first line hold column names?
+  - path: sources.*.csv.quote
+    section: CSV dialect (declared, never sniffed)
+    level: C
+    owner: DE
+    gate: A
+    condition: {eq: ["sources.{1}.format", csv]}
+    default: '"'
+    prompt: Quote character.
+  - path: sources.*.csv.escape
+    section: CSV dialect (declared, never sniffed)
+    level: C
+    owner: DE
+    gate: A
+    condition: {eq: ["sources.{1}.format", csv]}
+    default: '"'
+    prompt: Escape character inside quotes.
+  - path: sources.*.csv.encoding
+    section: CSV dialect (declared, never sniffed)
+    level: C
+    owner: DE
+    gate: A
+    type: enum
+    choices: [utf-8, utf-16, latin-1, cp1252]
+    condition: {eq: ["sources.{1}.format", csv]}
+    default: utf-8
+    prompt: Text encoding.
+  - path: sources.*.csv.null_tokens
+    section: CSV dialect (declared, never sniffed)
+    level: O
+    owner: DE
+    gate: A
+    type: list
+    prompt: 'Extra strings that mean "no value" (e.g. "N/A", "-"). Empty fields always count.'
+    consequence: only empty fields are treated as missing values
+  - path: sources.*.xlsx.sheet
+    section: Excel
+    level: C
+    owner: DE
+    gate: A
+    condition: {eq: ["sources.{1}.format", xlsx]}
+    prompt: Sheet name.
+  - path: sources.*.xlsx.header_row
+    section: Excel
+    level: C
+    owner: DE
+    gate: A
+    type: int
+    condition: {eq: ["sources.{1}.format", xlsx]}
+    default: "1"
+    prompt: Row number holding the column names (merged/multi-row headers are not supported in v1).
+  - path: sources.*.schema.columns
+    section: Schema and classification
+    level: M
+    owner: DE
+    gate: A
+    type: map
+    min_items: 1
+    allow_infer: "true"
+    prompt: "Expected columns: name → {type, required, key, allowed_values, classification}.
+      Give it as YAML, a CSV data dictionary or DDL, or answer `infer` to propose it from a
+      sample file — an inferred schema must be confirmed before anything builds."
+    why: the schema is the ingress contract; it can never be skipped
+  - path: sources.*.schema.columns.*.type
+    section: Schema and classification
+    level: M
+    owner: DE
+    gate: A
+    type: duckdb_type
+    prompt: Warehouse type (VARCHAR, INTEGER, BIGINT, DECIMAL(18,2), DOUBLE, DATE, TIMESTAMP, BOOLEAN).
+  - path: sources.*.schema.columns.*.required
+    section: Schema and classification
+    level: M
+    owner: DE
+    gate: A
+    type: bool
+    prompt: Must the column be present in every file? (A missing required column rejects the file.)
+  - path: sources.*.schema.columns.*.key
+    section: Schema and classification
+    level: O
+    owner: DE
+    gate: A
+    type: bool
+    prompt: Part of the record's identity?
+    consequence: column not used for duplicate profiling
+  - path: sources.*.schema.columns.*.allowed_values
+    section: Schema and classification
+    level: O
+    owner: DE
+    gate: A
+    type: list
+    prompt: Allowed values for a categorical column (list; 'NA' inside a list is kept as a value).
+    consequence: no allowed-value check on this column
+  - path: sources.*.schema.columns.*.classification
+    section: Schema and classification
+    level: M*
+    owner: GOV
+    gate: A
+    type: enum
+    choices: [public, internal, pii, sensitive, regulated]
+    prompt: "Governance classification of the column. pii/sensitive/regulated columns must be
+      masked, hashed, dropped or explicitly kept in silver."
+    why: classification is a governance decision and must exist before any data moves past bronze
+  - path: sources.*.load_type
+    section: Load behaviour
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [full_refresh, incremental_append, snapshot, cdc]
+    prompt: "full_refresh = each file replaces everything; incremental_append = new batches add rows;
+      snapshot = each batch is a full picture at a date; cdc = change records (insert/update/delete)."
+    why: decides batching, checkpoints and which silver merge strategies make sense
+  - path: sources.*.redelivery_policy
+    section: Load behaviour
+    level: C
+    owner: DE
+    gate: A
+    type: enum
+    choices: [replace, reject]
+    condition: {in: ["sources.{1}.load_type", [incremental_append, snapshot, cdc]]}
+    prompt: "If a batch that was already loaded arrives again with DIFFERENT content: replace it
+      (downstream partitions are rebuilt) or reject and alert."
+    why: without it a corrected re-delivery is silently skipped forever
+  - path: sources.*.freshness.basis
+    section: Ingress gates
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [batch_token, column, none]
+    prompt: "How freshness is judged: from the batch id (e.g. 2025-01), from a date column, or none."
+    why: freshness is the only guard against loading stale data as new
+  - path: sources.*.freshness.token_format
+    section: Ingress gates
+    level: C
+    owner: DE
+    gate: A
+    condition: {eq: ["sources.{1}.freshness.basis", batch_token]}
+    prompt: strftime format of the batch id, e.g. %Y-%m.
+  - path: sources.*.freshness.column
+    section: Ingress gates
+    level: C
+    owner: DE
+    gate: A
+    type: column
+    condition: {eq: ["sources.{1}.freshness.basis", column]}
+    validate: ["column_of:source:{1}"]
+    prompt: Date/timestamp column used for freshness.
+  - path: sources.*.freshness.formats
+    section: Ingress gates
+    level: C
+    owner: DE
+    gate: A
+    type: strftime_list
+    condition: {eq: ["sources.{1}.freshness.basis", column]}
+    prompt: Format(s) of that column, e.g. [ "%Y-%m-%d %H:%M:%S" ].
+  - path: sources.*.freshness.window_days
+    section: Ingress gates
+    level: C
+    owner: PO
+    gate: A
+    type: int
+    condition: {in: ["sources.{1}.freshness.basis", [batch_token, column]]}
+    prompt: A batch whose newest data is older than this many days is rejected.
+  - path: sources.*.volume.min_rows
+    section: Ingress gates
+    level: O
+    owner: DE
+    gate: A
+    type: int
+    prompt: Reject a file with fewer rows than this.
+    consequence: only zero-row files are rejected
+  - path: sources.*.volume.max_rows
+    section: Ingress gates
+    level: O
+    owner: DE
+    gate: A
+    type: int
+    prompt: Reject a file with more rows than this.
+    consequence: no upper volume bound
+  - path: sources.*.volume.threshold_source
+    section: Ingress gates
+    level: C
+    owner: DE
+    gate: A
+    type: enum
+    choices: [synthetic, real, owner]
+    condition: {any: [{nonempty: "sources.{1}.volume.min_rows"}, {nonempty: "sources.{1}.volume.max_rows"}]}
+    prompt: Where the volume bounds came from (synthetic thresholds must be re-confirmed on real data).
+  - path: sources.*.retry_attempts
+    section: Ingress gates
+    level: O
+    owner: DE
+    gate: A
+    type: int
+    default: "3"
+    prompt: Retries for transient read errors (exponential backoff 2, 4, 8 s…).
+    consequence: 3 attempts
+  - path: sources.*.credentials_env
+    section: Ingress gates
+    level: O
+    owner: DE
+    gate: A
+    prompt: NAME of the environment variable holding a token for HTTP sources (never the token itself).
+    consequence: requests are sent without credentials
+  - path: sources.*.drift_policy
+    section: Ingress gates
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [land_and_log, reject]
+    default: land_and_log
+    prompt: "New, unexpected columns: land them and log the drift, or reject the file.
+      (Type changes and missing required columns always reject the file.)"
+  - path: sources.*.profile_split_by
+    section: Ingress gates
+    level: O
+    owner: DE
+    gate: A
+    type: columns
+    validate: ["columns_of:source:{1}"]
+    prompt: Columns to split null profiling by (finds columns never filled for one subset).
+    consequence: low-cardinality columns are chosen automatically

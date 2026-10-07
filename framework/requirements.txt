@@ -1,0 +1,9 @@
+# dwh_core runtime (install into the Python that `dwh doctor` reports)
+duckdb>=1.1,<2
+pandas>=2.0
+pyarrow>=14
+pyyaml>=6.0
+openpyxl>=3.1
+# dashboard (dwh-serve)
+streamlit>=1.30
+plotly>=5.18

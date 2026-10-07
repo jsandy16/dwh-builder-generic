@@ -1,0 +1,19 @@
+kpi,key,value,how
+orders_placed,order_purchase_timestamp=2017-02-07; cust_customer_state=SP,48,count of orders purchased on 2017-02-07 by customers in SP
+orders_placed,order_purchase_timestamp=2017-02-07; cust_customer_state=RJ,15,count of orders purchased on 2017-02-07 by customers in RJ
+orders_placed,order_purchase_timestamp=2017-03-04; cust_customer_state=MG,7,count of orders purchased on 2017-03-04 by customers in MG
+gmv,ord_order_purchase_timestamp=2017-02-12,15098.25,"sum of item price for 62 orders purchased 2017-02-12, canceled/unavailable excluded"
+avg_order_value,ord_order_purchase_timestamp=2017-02-12,243.52,15098.25 ÷ 62 orders
+gmv,ord_order_purchase_timestamp=2017-02-15,6770.15,"sum of item price for 60 orders purchased 2017-02-15, canceled/unavailable excluded"
+avg_order_value,ord_order_purchase_timestamp=2017-02-15,112.84,6770.15 ÷ 60 orders
+gmv,ord_order_purchase_timestamp=2016-10-03,441.98,"sum of item price for 7 orders purchased 2016-10-03, canceled/unavailable excluded"
+avg_order_value,ord_order_purchase_timestamp=2016-10-03,63.14,441.98 ÷ 7 orders
+on_time_delivery_rate,order_purchase_timestamp=2017-02-07,98.1,"106 on time of 108 delivered orders purchased 2017-02-07, ×100"
+on_time_delivery_rate,order_purchase_timestamp=2017-03-06,95.7,"90 on time of 94 delivered orders purchased 2017-03-06, ×100"
+on_time_delivery_rate,order_purchase_timestamp=2017-02-12,98.4,"60 on time of 61 delivered orders purchased 2017-02-12, ×100"
+avg_review_score,review_creation_date=2017-02-15,4.36,462 points ÷ 106 reviews created 2017-02-15
+avg_review_score,review_creation_date=2017-02-09,4.33,385 points ÷ 89 reviews created 2017-02-09
+avg_review_score,review_creation_date=2017-02-18,4.35,248 points ÷ 57 reviews created 2017-02-18
+cancellation_rate,order_purchase_timestamp=2017-02-07,0.9,"1 canceled of 112 orders purchased 2017-02-07, ×100"
+cancellation_rate,order_purchase_timestamp=2017-03-06,1.0,"1 canceled of 105 orders purchased 2017-03-06, ×100"
+cancellation_rate,order_purchase_timestamp=2017-03-01,1.0,"1 canceled of 99 orders purchased 2017-03-01, ×100"

@@ -1,0 +1,58 @@
+name: framework
+
+# The kernel, the skills, the validation suite and the repo tools.
+on:
+  pull_request:
+    paths: ["framework/**", "skills/**", "validation/**", "tools/**", ".github/workflows/framework.yml"]
+  push:
+    branches: [main]
+    paths: ["framework/**", "skills/**", "validation/**", "tools/**", ".github/workflows/framework.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: framework-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: framework/requirements.txt
+      - run: pip install -r framework/requirements.txt pytest ruff
+      - name: Lint (pyflakes-level errors only)
+        run: ruff check framework tools validation
+      - name: Unit tests
+        run: pytest -q framework/tests
+
+  validation:
+    needs: lint-and-unit
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        layout: [v1, v2]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: framework/requirements.txt
+      - run: pip install -r framework/requirements.txt
+      - name: End-to-end suite on layout ${{ matrix.layout }}
+        run: python tools/run_validation.py --layout ${{ matrix.layout }}
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-report-${{ matrix.layout }}
+          path: validation/REPORT*.md

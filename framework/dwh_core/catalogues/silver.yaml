@@ -1,0 +1,369 @@
+title: Silver cleaning and conformance (dwh-silver)
+validators: [silver_entities, silver_rules_vs_data]
+fields:
+  - path: policies.timezone.reporting
+    section: Project policy
+    level: M*
+    owner: PO
+    gate: A
+    type: timezone
+    prompt: "Reporting time zone — decides which calendar day a timestamp belongs to (IANA name,
+      e.g. Asia/Kolkata, America/New_York, UTC)."
+    why: a machine-dependent time zone puts the same event on different days on different laptops
+  - path: silver.entities
+    section: Entities
+    level: M
+    owner: DE
+    gate: A
+    type: map
+    min_items: 1
+    prompt: One cleaned, conformed table per business entity (e.g. trips, events), keyed by name.
+  - path: silver.entities.*.sources
+    section: Entities
+    level: M
+    owner: DE
+    gate: A
+    type: list
+    min_items: 1
+    validate: [source_list]
+    prompt: Bronze sources feeding this entity.
+  - path: silver.entities.*.columns
+    section: Columns and types
+    level: M
+    owner: DE
+    gate: A
+    type: map
+    min_items: 1
+    prefill: from the bronze schema of the entity's sources — show it and confirm
+    prompt: "Canonical columns: name → {type, formats (dates/timestamps), source_timezone (timestamps)}."
+    why: silver types are the contract every metric is computed on
+  - path: silver.entities.*.columns.*.type
+    section: Columns and types
+    level: M
+    owner: DE
+    gate: A
+    type: duckdb_type
+    prompt: "Type. Money must be DECIMAL(p,s), never DOUBLE."
+  - path: silver.entities.*.columns.*.formats
+    section: Columns and types
+    level: C
+    owner: DE
+    gate: A
+    type: strftime_list
+    condition: {in: ["silver.entities.{1}.columns.{2}.type", [DATE, TIMESTAMP]]}
+    prompt: "Every date/timestamp format present in the raw values, most common first
+      (e.g. [\"%Y-%m-%d\", \"%d/%m/%Y\"]). If two formats can read the same value differently
+      (03/04/2024), you will be asked to choose a rule after profiling."
+  - path: silver.entities.*.columns.*.source_timezone
+    section: Columns and types
+    level: C
+    owner: DE
+    gate: A
+    type: timezone
+    condition: {eq: ["silver.entities.{1}.columns.{2}.type", TIMESTAMP]}
+    prompt: Time zone the raw timestamps were recorded in.
+  - path: silver.entities.*.mapping
+    section: Conformance
+    level: C
+    owner: DE
+    gate: A
+    type: map
+    condition: {count_gt: ["silver.entities.{1}.sources", 1]}
+    prompt: "For each source: canonical column → source column or SQL expression. Write NULL when a
+      source never supplies a column (you will then be asked whether that is structural)."
+  - path: silver.entities.*.mapping.*.*
+    section: Conformance
+    level: M
+    owner: DE
+    gate: A
+    prompt: "Source column name, SQL expression over source columns, or NULL (never supplied)."
+  - path: silver.entities.*.natural_key
+    section: Identity and duplicates
+    level: M
+    owner: DE
+    gate: A
+    type: columns
+    validate: ["columns_of:silver:{1}"]
+    prompt: "Columns that identify one record. Use identity columns only — never a measure that can
+      be corrected later (a corrected fare must update the trip, not create a second one)."
+    why: drives de-duplication and every incremental merge
+  - path: silver.entities.*.tiebreaker
+    section: Identity and duplicates
+    level: M
+    owner: DE
+    gate: A
+    type: list
+    validate: ["tiebreaker:silver:{1}"]
+    prompt: "Which duplicate wins, e.g. [\"updated_at DESC\"]. It must separate every real duplicate;
+      the build fails if two different rows still tie."
+    why: an incomplete tiebreaker makes the surviving row depend on file order
+  - path: silver.entities.*.rejected_survivor_policy
+    section: Identity and duplicates
+    level: M*
+    owner: SME
+    gate: A
+    type: enum
+    choices: [keep_last_good, reject_key]
+    prompt: "If the newest version of a record fails a rule: keep the most recent version that passes,
+      or reject the whole record."
+    why: it decides whether stale data may stand in for a rejected correction — a business call
+  - path: silver.entities.*.null_policy
+    section: Null handling
+    level: M
+    owner: SME
+    gate: A
+    type: map
+    prompt: "For EVERY column: drop (row goes to the dead-letter file with a reason) |
+      impute:<value> (filled and flagged is_<col>_imputed) | keep (stays NULL)."
+    why: silently dropping or filling values changes every downstream number
+  - path: silver.entities.*.null_policy.*
+    section: Null handling
+    level: M
+    owner: SME
+    gate: A
+    prompt: "drop | impute:<value> | keep — for this column."
+  - path: silver.entities.*.structural_nulls.*
+    section: Null handling
+    level: M*
+    owner: SME
+    gate: A
+    type: enum
+    choices: [structural, defect]
+    prompt: "A column that a source never fills (or one subset never fills): structural = not measured
+      there, leave NULL and never impute; defect = data is missing and the null policy applies."
+    why: imputing a value that was never measured fabricates data
+  - path: silver.entities.*.valid_anomalies
+    section: Business rules
+    level: M*
+    owner: SME
+    gate: A
+    type: map
+    none_only: "true"
+    prompt: "Rows that LOOK wrong but are real business events and must be KEPT (e.g. negative amount
+      = refund): name → {predicate, reason}. Answer 'none' if there are none."
+    why: deleting real events as dirt (refunds, reversals) silently overstates totals
+  - path: silver.entities.*.valid_anomalies.*.predicate
+    section: Business rules
+    level: M*
+    owner: SME
+    gate: A
+    type: sql_predicate
+    validate: ["sql_predicate:silver:{1}"]
+    prompt: SQL condition on canonical columns, e.g. mrr_amount < 0
+  - path: silver.entities.*.valid_anomalies.*.reason
+    section: Business rules
+    level: M*
+    owner: SME
+    gate: A
+    type: text
+    prompt: Why these rows are real.
+  - path: silver.entities.*.hard_rejects
+    section: Business rules
+    level: M
+    owner: SME
+    gate: A
+    type: map
+    none_only: "true"
+    prompt: "Physically impossible rows to dead-letter: name → {predicate, reason}. Answer 'none'
+      if there are none."
+    why: impossible rows must be removed with a reason, never silently
+  - path: silver.entities.*.hard_rejects.*.predicate
+    section: Business rules
+    level: M
+    owner: SME
+    gate: A
+    type: sql_predicate
+    validate: ["sql_predicate:silver:{1}"]
+    prompt: SQL condition that marks the row impossible, e.g. dropoff_ts <= pickup_ts
+  - path: silver.entities.*.hard_rejects.*.reason
+    section: Business rules
+    level: M
+    owner: SME
+    gate: A
+    validate: [identifier]
+    prompt: Short reason code written on each rejected row, e.g. impossible_time_order
+  - path: silver.entities.*.dead_letter_tolerance_pct
+    section: Tolerances
+    level: M
+    owner: PO
+    gate: A
+    type: percent
+    default: "5"
+    prompt: Fail the build if more than this % of a batch is dead-lettered (a spike means the source changed).
+  - path: silver.entities.*.tolerance_source
+    section: Tolerances
+    level: M
+    owner: PO
+    gate: A
+    type: enum
+    choices: [synthetic, real, owner]
+    prompt: Where the tolerance came from (synthetic-tuned thresholds are re-confirmed on real data).
+  - path: silver.entities.*.merge.strategy
+    section: Merge
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [append, upsert_by_version, partition_replace, cdc_apply, snapshot_diff]
+    prompt: "append = immutable events; upsert_by_version = records updated over time (newer version
+      wins, late older batches never overwrite); partition_replace = whole batches/partitions replaced
+      (re-deliveries); cdc_apply = insert/update/delete records; snapshot_diff = full snapshots (missing
+      keys soft-deleted)."
+    why: one merge rule for every load type loses updates and resurrects deletes
+  - path: silver.entities.*.merge.version_column
+    section: Merge
+    level: C
+    owner: DE
+    gate: A
+    type: column
+    condition: {eq: ["silver.entities.{1}.merge.strategy", upsert_by_version]}
+    validate: ["column_of:silver:{1}"]
+    prompt: Column that increases with each new version of a record (e.g. updated_at).
+  - path: silver.entities.*.merge.partition_column
+    section: Merge
+    level: O
+    owner: DE
+    gate: A
+    type: column
+    default: _batch_id
+    prompt: Partition replaced as a unit (default = the source batch).
+    consequence: whole source batches are replaced
+  - path: silver.entities.*.merge.op_column
+    section: Merge
+    level: C
+    owner: DE
+    gate: A
+    type: column
+    condition: {eq: ["silver.entities.{1}.merge.strategy", cdc_apply]}
+    validate: ["column_of:silver:{1}"]
+    prompt: Column holding the change operation.
+  - path: silver.entities.*.merge.op_codes.insert
+    section: Merge
+    level: C
+    owner: DE
+    gate: A
+    condition: {eq: ["silver.entities.{1}.merge.strategy", cdc_apply]}
+    prompt: Value meaning insert (e.g. I).
+  - path: silver.entities.*.merge.op_codes.update
+    section: Merge
+    level: C
+    owner: DE
+    gate: A
+    condition: {eq: ["silver.entities.{1}.merge.strategy", cdc_apply]}
+    prompt: Value meaning update (e.g. U).
+  - path: silver.entities.*.merge.op_codes.delete
+    section: Merge
+    level: C
+    owner: DE
+    gate: A
+    condition: {eq: ["silver.entities.{1}.merge.strategy", cdc_apply]}
+    prompt: Value meaning delete (e.g. D).
+  - path: silver.entities.*.merge.sequence_column
+    section: Merge
+    level: C
+    owner: DE
+    gate: A
+    type: column
+    condition: {eq: ["silver.entities.{1}.merge.strategy", cdc_apply]}
+    validate: ["column_of:silver:{1}"]
+    prompt: Column ordering changes for the same key.
+  - path: silver.entities.*.flags
+    section: Derived columns
+    level: O
+    owner: SME
+    gate: A
+    type: map
+    prompt: "Business flags defined once here: name → SQL condition (e.g. is_airport_trip:
+      pu_zone IN (1, 132, 138))."
+    consequence: no derived flags
+  - path: silver.entities.*.flags.*
+    section: Derived columns
+    level: M
+    owner: SME
+    gate: A
+    type: sql_predicate
+    validate: ["sql_predicate:silver:{1}"]
+    prompt: SQL condition.
+  - path: silver.entities.*.lookups
+    section: Derived columns
+    level: O
+    owner: DE
+    gate: A
+    type: map
+    prompt: "Enrich from a reference entity: name → {reference, on: {local_col: ref_col}, columns, missing}."
+    consequence: no reference enrichment
+  - path: silver.entities.*.lookups.*.reference
+    section: Derived columns
+    level: M
+    owner: DE
+    gate: A
+    validate: [silver_entity]
+    prompt: Reference silver entity (its key must be unique — checked at build).
+  - path: silver.entities.*.lookups.*.on
+    section: Derived columns
+    level: M
+    owner: DE
+    gate: A
+    type: map
+    prompt: "Join columns: local_column: reference_column."
+  - path: silver.entities.*.lookups.*.columns
+    section: Derived columns
+    level: M
+    owner: DE
+    gate: A
+    type: list
+    prompt: Reference columns to bring in.
+  - path: silver.entities.*.lookups.*.missing
+    section: Derived columns
+    level: M
+    owner: SME
+    gate: A
+    type: enum
+    choices: [reject, keep_null]
+    prompt: A code missing from the reference — dead-letter the row, or keep it with NULLs?
+  - path: silver.entities.*.masking.*
+    section: Protection
+    level: M*
+    owner: GOV
+    gate: A
+    type: enum
+    choices: [hash, drop, keep]
+    prompt: For each pii/sensitive/regulated column — hash it, drop it, or keep it as is.
+    why: protected columns must never reach silver unmasked by default
+  - path: silver.entities.*.drop_columns
+    section: Protection
+    level: O
+    owner: DE
+    gate: A
+    type: map
+    prompt: "Source columns deliberately not carried into silver: column → reason."
+    consequence: every source column must map to a canonical column
+  - path: silver.entities.*.target_table
+    section: Output
+    level: O
+    owner: DE
+    gate: A
+    validate: [identifier]
+    prompt: Silver table name.
+    consequence: named silver_<entity>
+  - path: silver.entities.*.date_ambiguity.*
+    section: After profiling (gate B)
+    level: M*
+    owner: SME
+    gate: B
+    type: enum
+    choices: [prefer_first, reject]
+    prompt: "Some values read as DIFFERENT dates under two declared formats, or with day and month swapped
+      (e.g. 03/04/2024 = 3 April or 4 March). prefer_first = read them with the first listed format;
+      reject = dead-letter them."
+    why: picking a date format silently is how whole months shift without a single error
+  - path: silver.entities.*.readback_confirmed
+    section: After profiling (gate B)
+    level: C*
+    owner: SME
+    gate: B
+    type: bool
+    condition: {any: [{nonempty: "silver.entities.{1}.valid_anomalies"}, {nonempty: "silver.entities.{1}.hard_rejects"}]}
+    prompt: "Having seen each rule rendered with how many rows it matches in the real data
+      (`dwh intake readback <entity>`), do the rules mean what you intended? (yes/no)"
+    why: a free-text rule can be recorded as valid SQL that means something else

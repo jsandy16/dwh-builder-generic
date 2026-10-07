@@ -1,0 +1,55 @@
+on_time_delivery_rate:
+  entity: orders
+  plain_definition: "Share of delivered orders that arrived on or before the estimated delivery date,\
+    \ by purchase day."
+  metric_type: ratio
+  numerator:
+    measure: count
+    filter: order_delivered_customer_date <= order_estimated_delivery_date
+  denominator:
+    measure: count
+    include:
+      column: order_status
+      values:
+      - delivered
+    exclude:
+      values:
+      - created
+      - approved
+      - invoiced
+      - processing
+      - shipped
+      - canceled
+      - unavailable
+  filters: "none"
+  zero_denominator: "null"
+  population: "NA"
+  grain:
+  - order_purchase_timestamp
+  time_grain: day
+  date_basis: order_purchase_timestamp
+  unit: percent
+  precision: "1"
+  additivity: non_additive
+  valid_range:
+    min: "0"
+    max: "100"
+  cadence: daily
+  dispute_owner: sandeep
+  version: "1.0.0"
+  effective_from: '2026-10-07'
+  reconciliation:
+    control: count
+    excluded_by: "order_status <> 'delivered'"
+    max_excluded_pct: "60"
+  target_table: gold_on_time_delivery_rate_day
+  golden_values:
+  - key:
+      order_purchase_timestamp: '2017-02-07'
+    value: "98.1"
+  - key:
+      order_purchase_timestamp: '2017-03-06'
+    value: "95.7"
+  - key:
+      order_purchase_timestamp: '2017-02-12'
+    value: "98.4"

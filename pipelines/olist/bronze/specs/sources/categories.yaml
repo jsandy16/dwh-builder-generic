@@ -1,0 +1,36 @@
+categories:
+  role: reference
+  connector: local_file
+  location: data/raw/batch_01/product_category_name_translation.csv
+  format: csv
+  load_type: full_refresh
+  drift_policy: land_and_log
+  freshness:
+    basis: "none"
+  volume:
+    min_rows: "NA"
+    max_rows: "NA"
+  retry_attempts: "3"
+  credentials_env: "NA"
+  profile_split_by: "NA"
+  csv:
+    delimiter: ","
+    header: "yes"
+    quote: "\""
+    escape: "\""
+    encoding: utf-8
+    null_tokens: "NA"
+  schema:
+    columns:
+      product_category_name:
+        type: VARCHAR
+        required: "yes"
+        key: "yes"
+        allowed_values: "NA"
+        classification: internal
+      product_category_name_english:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal

@@ -1,0 +1,22 @@
+{
+  "conflicts": [],
+  "generated_at": "2026-10-07T08:04:40+00:00",
+  "rows": [
+    {
+      "action": "DEAD-LETTER (reason carrier_before_approval)",
+      "kind": "hard reject",
+      "matches": 1,
+      "name": "carrier_before_approval",
+      "rule": "order_delivered_carrier_date < order_approved_at"
+    },
+    {
+      "action": "DEAD-LETTER (reason delivered_without_date)",
+      "kind": "hard reject",
+      "matches": 0,
+      "name": "delivered_without_date",
+      "rule": "order_status = 'delivered' AND order_delivered_customer_date IS NULL"
+    }
+  ],
+  "rules_hash": "47c08a893037b966ba9af530ae4c0d6b50b8df7e3ffb6919526b8ba95cf7697c",
+  "total": 3978
+}

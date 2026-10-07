@@ -1,0 +1,145 @@
+title: Dashboard (dwh-serve)
+validators: [serve_refs]
+fields:
+  - path: serve.title
+    section: Dashboard
+    level: M
+    owner: PO
+    gate: A
+    prompt: Dashboard title.
+  - path: serve.audience
+    section: Dashboard
+    level: M
+    owner: PO
+    gate: A
+    type: text
+    prompt: Who reads it (decides wording and defaults).
+  - path: serve.runtime
+    section: Dashboard
+    level: M
+    owner: DE
+    gate: A
+    type: enum
+    choices: [streamlit]
+    default: streamlit
+    prompt: Dashboard runtime (v1 builds Streamlit; Power BI arrives as an adapter later).
+  - path: serve.reference_clock
+    section: Freshness
+    level: M
+    owner: PO
+    gate: A
+    type: enum
+    choices: [event, load, replay]
+    prompt: "What 'fresh' means — event: newest data date vs today; load: time since the last
+      publish; replay: historical/demo data, no stale banner."
+    why: with historical data an event clock shows a permanent STALE banner
+  - path: serve.stale_after_hours
+    section: Freshness
+    level: C
+    owner: PO
+    gate: A
+    type: int
+    condition: {in: ["serve.reference_clock", [event, load]]}
+    prompt: Show a stale-data banner after this many hours.
+  - path: serve.kpis
+    section: Content
+    level: M
+    owner: PO
+    gate: A
+    type: map
+    min_items: 1
+    prompt: "KPI cards: name → {metric, label}. Values are recomputed from the metric card
+      (ratios from numerator ÷ denominator), never averaged."
+  - path: serve.kpis.*.metric
+    section: Content
+    level: M
+    owner: PO
+    gate: A
+    validate: [metric_name]
+    prompt: Metric card name.
+  - path: serve.kpis.*.label
+    section: Content
+    level: O
+    owner: PO
+    gate: A
+    prompt: Display label.
+    consequence: the metric name is shown
+  - path: serve.charts
+    section: Content
+    level: M
+    owner: PO
+    gate: A
+    type: map
+    min_items: 1
+    prompt: "Charts: name → {type: line|bar, metric, x: <grain column>, color: <grain column> or NA}."
+  - path: serve.charts.*.type
+    section: Content
+    level: M
+    owner: PO
+    gate: A
+    type: enum
+    choices: [line, bar]
+    prompt: Chart type.
+  - path: serve.charts.*.metric
+    section: Content
+    level: M
+    owner: PO
+    gate: A
+    validate: [metric_name]
+    prompt: Metric card name.
+  - path: serve.charts.*.x
+    section: Content
+    level: M
+    owner: PO
+    gate: A
+    prompt: X axis (a grain column of the metric).
+  - path: serve.charts.*.title
+    section: Content
+    level: O
+    owner: PO
+    gate: A
+    prompt: Chart heading.
+    consequence: the chart's key is used as its heading
+  - path: serve.charts.*.color
+    section: Content
+    level: O
+    owner: PO
+    gate: A
+    prompt: Split series by this grain column.
+    consequence: single series
+  - path: serve.filters
+    section: Content
+    level: O
+    owner: PO
+    gate: A
+    type: list
+    prompt: Sidebar filters (grain columns).
+    consequence: date range filter only
+  - path: serve.row_security
+    section: Access
+    level: M*
+    pending_ok: "true"
+    owner: GOV
+    gate: A
+    none_only: "true"
+    prompt: "Row-level security: may every viewer see every row? Answer 'none' if so. (dwh_core v1 does not
+      enforce row-level security; a dashboard that needs it must not be released until the governed phase.)
+      Access control is a governance decision."
+    why: who sees which rows is one of the six human-owned decisions
+  - path: serve.port
+    section: Runtime
+    level: O
+    owner: DE
+    gate: A
+    type: int
+    default: "8501"
+    prompt: Local port.
+    consequence: port 8501
+  - path: serve.auto_refresh_seconds
+    section: Runtime
+    level: O
+    owner: DE
+    gate: A
+    type: int
+    prompt: Reload the page every N seconds (useful while scheduled loads run).
+    consequence: manual refresh only

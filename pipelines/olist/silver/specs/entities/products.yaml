@@ -1,0 +1,55 @@
+products:
+  sources:
+  - products
+  columns:
+    product_id:
+      type: VARCHAR
+    product_name_lenght:
+      type: DOUBLE
+    product_description_lenght:
+      type: DOUBLE
+    product_photos_qty:
+      type: DOUBLE
+    product_weight_g:
+      type: DOUBLE
+    product_length_cm:
+      type: DOUBLE
+    product_height_cm:
+      type: DOUBLE
+    product_width_cm:
+      type: DOUBLE
+    product_category_name:
+      type: VARCHAR
+  natural_key:
+  - product_id
+  tiebreaker:
+  - product_id ASC
+  merge:
+    strategy: partition_replace
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  null_policy:
+    product_id: drop
+    product_name_lenght: keep
+    product_description_lenght: keep
+    product_photos_qty: keep
+    product_weight_g: keep
+    product_length_cm: keep
+    product_height_cm: keep
+    product_width_cm: keep
+    product_category_name: keep
+  hard_rejects: "none"
+  valid_anomalies: "none"
+  lookups:
+    cat:
+      reference: categories
+      "on":
+        product_category_name: product_category_name
+      columns:
+      - product_category_name_english
+      missing: keep_null
+  flags: "NA"
+  drop_columns: "NA"

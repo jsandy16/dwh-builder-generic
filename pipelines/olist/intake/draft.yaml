@@ -1,0 +1,275 @@
+# Assistant's draft for the Olist intake workbook — proposals only, never recorded as answers.
+# Sources: docs/source-README.md (25 chronological batches; measured data-quality issues).
+people:
+  sandeep:
+    name: Sandeep Jaguri
+    roles: [DE, PO, SME, GOV]
+project:
+  name: olist
+  profile: fast
+  builder: sandeep
+policies:
+  compliance: none
+  egress: stats_only
+  timezone:
+    reporting: America/Sao_Paulo
+sources:
+  orders:
+    role: fact
+    location: data/raw/batch_{batch}/olist_orders_dataset.csv
+    schema:
+      columns:
+        order_id: {key: "yes"}
+  order_items:
+    role: fact
+    location: data/raw/batch_{batch}/olist_order_items_dataset.csv
+    schema:
+      columns:
+        order_id: {key: "yes"}
+        order_item_id: {key: "yes"}
+  payments:
+    role: fact
+    location: data/raw/batch_{batch}/olist_order_payments_dataset.csv
+    schema:
+      columns:
+        order_id: {key: "yes"}
+        payment_sequential: {key: "yes"}
+  reviews:
+    role: fact
+    location: data/raw/batch_{batch}/olist_order_reviews_dataset.csv
+    schema:
+      columns:
+        review_id: {key: "yes"}
+        order_id: {key: "yes"}
+  customers:
+    role: dimension
+    location: data/raw/batch_{batch}/olist_customers_dataset.csv
+    schema:
+      columns:
+        customer_id: {key: "yes"}
+  products:
+    role: dimension
+    location: data/raw/batch_{batch}/olist_products_dataset.csv
+    schema:
+      columns:
+        product_id: {key: "yes"}
+        product_name_lenght: {type: DOUBLE}
+        product_description_lenght: {type: DOUBLE}
+        product_photos_qty: {type: DOUBLE}
+        product_weight_g: {type: DOUBLE}
+        product_length_cm: {type: DOUBLE}
+        product_height_cm: {type: DOUBLE}
+        product_width_cm: {type: DOUBLE}
+  sellers:
+    role: dimension
+    location: data/raw/batch_{batch}/olist_sellers_dataset.csv
+    schema:
+      columns:
+        seller_id: {key: "yes"}
+        seller_zip_code_prefix: {classification: internal}
+        seller_city: {classification: internal}
+  geolocation:
+    role: reference
+    location: data/raw/batch_{batch}/olist_geolocation_dataset.csv
+    schema:
+      columns:
+        geolocation_zip_code_prefix: {classification: internal}
+        geolocation_lat: {classification: internal}
+        geolocation_lng: {classification: internal}
+  categories:
+    role: reference
+    location: data/raw/batch_01/product_category_name_translation.csv
+    load_type: full_refresh
+    schema:
+      columns:
+        product_category_name: {key: "yes"}
+silver:
+  entities:
+    orders:
+      sources: [orders]
+      tiebreaker: ["order_purchase_timestamp DESC"]
+      hard_rejects:
+        carrier_before_approval:
+          predicate: order_delivered_carrier_date < order_approved_at
+          reason: carrier_before_approval
+        delivered_without_date:
+          predicate: order_status = 'delivered' AND order_delivered_customer_date IS NULL
+          reason: delivered_without_date
+      lookups:
+        cust:
+          reference: customers
+          "on": {customer_id: customer_id}
+          columns: [customer_state]
+          missing: keep_null
+    order_items:
+      sources: [order_items]
+      tiebreaker: ["shipping_limit_date DESC"]
+      lookups:
+        ord:
+          reference: orders
+          "on": {order_id: order_id}
+          columns: [order_purchase_timestamp, order_status]
+          missing: reject
+    payments:
+      sources: [payments]
+      valid_anomalies:
+        zero_value:
+          predicate: payment_value = 0
+          reason: payments fully covered by vouchers are real and carry value 0
+      hard_rejects:
+        undefined_type:
+          predicate: payment_type = 'not_defined'
+          reason: payment_type_not_defined
+          decision: skip
+        zero_installments:
+          predicate: payment_installments = 0
+          reason: zero_installments
+          decision: skip
+    reviews:
+      sources: [reviews]
+    customers:
+      sources: [customers]
+      mapping:
+        customers:
+          customer_zip_code_prefix: "lpad(customer_zip_code_prefix, 5, '0')"
+    products:
+      sources: [products]
+      lookups:
+        cat:
+          reference: categories
+          "on": {product_category_name: product_category_name}
+          columns: [product_category_name_english]
+          missing: keep_null
+    sellers:
+      sources: [sellers]
+      mapping:
+        sellers:
+          seller_zip_code_prefix: "lpad(seller_zip_code_prefix, 5, '0')"
+    geolocation:
+      sources: [geolocation]
+      hard_rejects:
+        outside_brazil:
+          predicate: "geolocation_lat NOT BETWEEN -33.75 AND 5.27 OR geolocation_lng NOT BETWEEN -73.99 AND -34.79"
+          reason: outside_brazil
+      mapping:
+        geolocation:
+          geolocation_zip_code_prefix: "lpad(geolocation_zip_code_prefix, 5, '0')"
+    categories:
+      sources: [categories]
+metrics:
+  orders_placed:
+    entity: orders
+    plain_definition: Orders placed per purchase day and customer state.
+    metric_type: count
+    numerator: {measure: count, filter: none}
+    filters: none
+    grain: [order_purchase_timestamp, cust_customer_state]
+    time_grain: day
+    date_basis: order_purchase_timestamp
+    unit: count
+  gmv:
+    entity: order_items
+    plain_definition: Gross merchandise value — item prices of orders placed that day, excluding canceled and unavailable orders (freight not included).
+    metric_type: sum
+    numerator: {measure: "sum:price", filter: none}
+    filters: "ord_order_status NOT IN ('canceled', 'unavailable')"
+    grain: [ord_order_purchase_timestamp]
+    time_grain: day
+    date_basis: ord_order_purchase_timestamp
+    unit: "currency:BRL"
+    valid_range: {min: "0", max: none}
+    reconciliation: {control: "sum:price", excluded_by: "ord_order_status IN ('canceled', 'unavailable')", max_excluded_pct: "10"}
+  avg_order_value:
+    entity: order_items
+    plain_definition: Average item value per order placed that day (sum of item prices ÷ number of orders), same exclusions as GMV.
+    metric_type: average
+    numerator: {measure: "sum:price", filter: none}
+    denominator: {measure: "count_distinct:order_id"}
+    filters: "ord_order_status NOT IN ('canceled', 'unavailable')"
+    grain: [ord_order_purchase_timestamp]
+    time_grain: day
+    date_basis: ord_order_purchase_timestamp
+    unit: "currency:BRL"
+    valid_range: {min: "0", max: none}
+    reconciliation: {control: "count_distinct:order_id", excluded_by: "ord_order_status IN ('canceled', 'unavailable')", max_excluded_pct: "10"}
+  on_time_delivery_rate:
+    entity: orders
+    plain_definition: Share of delivered orders that arrived on or before the estimated delivery date, by purchase day.
+    metric_type: ratio
+    numerator: {measure: count, filter: order_delivered_customer_date <= order_estimated_delivery_date}
+    denominator:
+      measure: count
+      include: {column: order_status, values: [delivered]}
+      exclude: {values: [created, approved, invoiced, processing, shipped, canceled, unavailable]}
+    filters: none
+    grain: [order_purchase_timestamp]
+    time_grain: day
+    date_basis: order_purchase_timestamp
+    unit: percent
+    reconciliation: {control: count, excluded_by: "order_status <> 'delivered'", max_excluded_pct: "60"}
+  avg_review_score:
+    entity: reviews
+    plain_definition: Average review score (1–5) of reviews created that day.
+    metric_type: average
+    numerator: {measure: "sum:review_score", filter: none}
+    denominator: {measure: count}
+    filters: none
+    grain: [review_creation_date]
+    time_grain: day
+    date_basis: review_creation_date
+    unit: score
+    precision: "2"
+    valid_range: {min: "1", max: "5"}
+  cancellation_rate:
+    entity: orders
+    plain_definition: Share of orders placed that day that were canceled.
+    metric_type: ratio
+    numerator: {measure: count, filter: "order_status = 'canceled'"}
+    denominator:
+      measure: count
+      include: {column: order_status, values: [created, approved, invoiced, processing, shipped, delivered, canceled, unavailable]}
+      exclude: {values: none}
+    filters: none
+    grain: [order_purchase_timestamp]
+    time_grain: day
+    date_basis: order_purchase_timestamp
+    unit: percent
+serve:
+  title: Olist marketplace — development (batch 01)
+  audience: Sandeep (developer) and product review
+  reference_clock: replay
+  kpis:
+    orders: {metric: orders_placed, label: Orders placed}
+    gmv: {metric: gmv, label: GMV (BRL)}
+    aov: {metric: avg_order_value, label: Average order value (BRL)}
+    on_time: {metric: on_time_delivery_rate, label: On-time delivery}
+    review: {metric: avg_review_score, label: Average review score}
+    cancel: {metric: cancellation_rate, label: Cancellations}
+  charts:
+    orders_by_state: {type: bar, metric: orders_placed, x: cust_customer_state, color: NA, title: Orders by customer state}
+    orders_trend: {type: line, metric: orders_placed, x: order_purchase_timestamp, color: NA, title: Orders per day}
+    gmv_trend: {type: line, metric: gmv, x: ord_order_purchase_timestamp, color: NA, title: GMV per day}
+    on_time_trend: {type: line, metric: on_time_delivery_rate, x: order_purchase_timestamp, color: NA, title: On-time delivery per day}
+  filters: [cust_customer_state]
+notes:
+  people.sandeep.roles: "if you are the only person on this project, you hold every role — add people here if others decide governance or KPIs"
+  policies.timezone.reporting: "Olist is a Brazilian marketplace; its timestamps are Brazil local time (São Paulo)"
+  policies.compliance: "public, anonymised dataset (CC BY-NC-SA 4.0); v1 has no LGPD regime — gdpr is the nearest if your governance needs one"
+  sources.categories.location: "README: the category translation is a static lookup shipped in batch_01 only"
+  sources.categories.load_type: "static lookup: each delivery replaces the table"
+  sources.products.schema.columns.product_photos_qty.type: "README: product measures sometimes arrive as decimals (1.0), so DOUBLE, not an integer"
+  sources.sellers.schema.columns.seller_zip_code_prefix.classification: "a business address, not a person's"
+  sources.geolocation.schema.columns.geolocation_lat.classification: "zip-prefix points with no person attached; change to pii if governance says so"
+  sources.geolocation.schema.columns.geolocation_zip_code_prefix.classification: "zip-prefix reference data with no person attached"
+  silver.entities.orders.hard_rejects.carrier_before_approval: "README: 1,359 orders were handed to the carrier before approval"
+  silver.entities.orders.hard_rejects.delivered_without_date: "README: 8 orders have status delivered but no delivery date"
+  silver.entities.geolocation.hard_rejects.outside_brazil: "README: 42 points lie outside Brazil's bounding box"
+  silver.entities.payments.valid_anomalies.zero_value: "README: 9 payments with value 0"
+  silver.entities.payments.hard_rejects.undefined_type: "README: 3 payments with type not_defined — proposed as skip (kept); set apply to dead-letter them"
+  silver.entities.payments.hard_rejects.zero_installments: "README: 2 payments with 0 installments — proposed as skip (kept)"
+  silver.entities.geolocation.natural_key: "no key in the source: the whole row is the key, so the 261,831 exact duplicates (README) collapse to one"
+  silver.entities.orders.tiebreaker: "an order appears once per batch; the latest purchase timestamp wins if it ever repeats"
+  silver.entities.orders.lookups.cust: "brings customer_state for the orders-by-state KPI"
+  silver.entities.order_items.lookups.ord: "brings purchase time and status: GMV is dated by when the order was placed"
+  silver.entities.products.lookups.cat: "README: 610 products have no category and 2 categories are missing from the translation — keep_null"
+  silver.entities.customers.mapping: "README: 23,995 customer zips lost their leading zero"

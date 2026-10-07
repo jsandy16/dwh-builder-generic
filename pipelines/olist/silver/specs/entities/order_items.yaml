@@ -1,0 +1,54 @@
+order_items:
+  sources:
+  - order_items
+  columns:
+    order_id:
+      type: VARCHAR
+    order_item_id:
+      type: BIGINT
+    product_id:
+      type: VARCHAR
+    seller_id:
+      type: VARCHAR
+    shipping_limit_date:
+      type: TIMESTAMP
+      formats:
+      - "%Y-%m-%d %H:%M:%S"
+      source_timezone: America/Sao_Paulo
+    price:
+      type: "DECIMAL(18,2)"
+    freight_value:
+      type: "DECIMAL(18,2)"
+  natural_key:
+  - order_id
+  - order_item_id
+  tiebreaker:
+  - shipping_limit_date DESC
+  merge:
+    strategy: partition_replace
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  null_policy:
+    order_id: drop
+    order_item_id: drop
+    product_id: keep
+    seller_id: keep
+    shipping_limit_date: keep
+    price: keep
+    freight_value: keep
+  hard_rejects: "none"
+  valid_anomalies: "none"
+  lookups:
+    ord:
+      reference: orders
+      "on":
+        order_id: order_id
+      columns:
+      - order_purchase_timestamp
+      - order_status
+      missing: reject
+  flags: "NA"
+  drop_columns: "NA"

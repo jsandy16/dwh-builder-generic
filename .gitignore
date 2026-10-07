@@ -1,0 +1,30 @@
+# ---- data and local state: never in git
+pipelines/*/data/raw/
+pipelines/*/.dwh/
+pipelines/*/intake/current/
+# machine-specific wrappers written by `dwh doctor`
+pipelines/*/dwh
+pipelines/*/dwh.cmd
+# a kernel copied into a pipeline by mistake (pipelines use framework/dwh_core)
+pipelines/*/dwh_core/
+
+# ---- build output
+dist/
+validation/runs/
+validation/results*.json
+*.egg-info/
+build/
+
+# ---- python / editors / OS
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+~$*.xlsx

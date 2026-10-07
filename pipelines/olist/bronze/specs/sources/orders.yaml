@@ -1,0 +1,73 @@
+orders:
+  role: fact
+  connector: local_file
+  location: "data/raw/batch_{batch}/olist_orders_dataset.csv"
+  format: csv
+  load_type: incremental_append
+  redelivery_policy: replace
+  drift_policy: land_and_log
+  freshness:
+    basis: "none"
+  volume:
+    min_rows: "NA"
+    max_rows: "NA"
+  retry_attempts: "3"
+  credentials_env: "NA"
+  profile_split_by: "NA"
+  csv:
+    delimiter: ","
+    header: "yes"
+    quote: "\""
+    escape: "\""
+    encoding: utf-8
+    null_tokens: "NA"
+  schema:
+    columns:
+      order_id:
+        type: VARCHAR
+        required: "yes"
+        key: "yes"
+        allowed_values: "NA"
+        classification: internal
+      customer_id:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: pii
+      order_status:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      order_purchase_timestamp:
+        type: TIMESTAMP
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      order_approved_at:
+        type: TIMESTAMP
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      order_delivered_carrier_date:
+        type: TIMESTAMP
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      order_delivered_customer_date:
+        type: TIMESTAMP
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      order_estimated_delivery_date:
+        type: TIMESTAMP
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal

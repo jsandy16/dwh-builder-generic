@@ -1,0 +1,19 @@
+# Normalise text to LF in the repository; Windows checkouts may use CRLF in the working tree.
+* text=auto eol=lf
+
+# Windows wrappers keep CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary files: never diffed or merged as text
+*.xlsx binary
+*.xls binary
+*.png binary
+*.jpg binary
+*.parquet binary
+*.duckdb binary
+*.zip binary
+*.skill binary
+
+# Generated code: collapsed in GitHub diffs (review the specs; CI proves the code matches them)
+pipelines/*/*/generated/** linguist-generated=true

@@ -1,0 +1,84 @@
+orders:
+  sources:
+  - orders
+  columns:
+    order_id:
+      type: VARCHAR
+    customer_id:
+      type: VARCHAR
+    order_status:
+      type: VARCHAR
+    order_purchase_timestamp:
+      type: TIMESTAMP
+      formats:
+      - "%Y-%m-%d %H:%M:%S"
+      source_timezone: America/Sao_Paulo
+    order_approved_at:
+      type: TIMESTAMP
+      formats:
+      - "%Y-%m-%d %H:%M:%S"
+      source_timezone: America/Sao_Paulo
+    order_delivered_carrier_date:
+      type: TIMESTAMP
+      formats:
+      - "%Y-%m-%d %H:%M:%S"
+      source_timezone: America/Sao_Paulo
+    order_delivered_customer_date:
+      type: TIMESTAMP
+      formats:
+      - "%Y-%m-%d %H:%M:%S"
+      source_timezone: America/Sao_Paulo
+    order_estimated_delivery_date:
+      type: TIMESTAMP
+      formats:
+      - "%Y-%m-%d %H:%M:%S"
+      source_timezone: America/Sao_Paulo
+  natural_key:
+  - order_id
+  tiebreaker:
+  - order_purchase_timestamp DESC
+  merge:
+    strategy: partition_replace
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  masking:
+    customer_id: hash
+  hard_rejects:
+    carrier_before_approval:
+      predicate: order_delivered_carrier_date < order_approved_at
+      reason: carrier_before_approval
+    delivered_without_date:
+      predicate: "order_status = 'delivered' AND order_delivered_customer_date IS NULL"
+      reason: delivered_without_date
+  structural_nulls:
+    "order_delivered_carrier_date|source=orders|order_status=invoiced": defect
+    "order_delivered_carrier_date|source=orders|order_status=processing": defect
+    "order_delivered_carrier_date|source=orders|order_status=unavailable": defect
+    "order_delivered_customer_date|source=orders|order_status=invoiced": defect
+    "order_delivered_customer_date|source=orders|order_status=processing": defect
+    "order_delivered_customer_date|source=orders|order_status=shipped": defect
+    "order_delivered_customer_date|source=orders|order_status=unavailable": defect
+  null_policy:
+    order_id: drop
+    customer_id: keep
+    order_status: keep
+    order_purchase_timestamp: keep
+    order_approved_at: keep
+    order_delivered_carrier_date: keep
+    order_delivered_customer_date: keep
+    order_estimated_delivery_date: keep
+  valid_anomalies: "none"
+  lookups:
+    cust:
+      reference: customers
+      "on":
+        customer_id: customer_id
+      columns:
+      - customer_state
+      missing: keep_null
+  flags: "NA"
+  drop_columns: "NA"
+  readback_confirmed: "yes"

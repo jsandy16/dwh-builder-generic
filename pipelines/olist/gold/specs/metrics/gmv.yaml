@@ -1,0 +1,39 @@
+gmv:
+  entity: order_items
+  plain_definition: "Gross merchandise value — item prices of orders placed that day, excluding canceled\
+    \ and unavailable orders (freight not included)."
+  metric_type: sum
+  numerator:
+    measure: "sum:price"
+    filter: "none"
+  filters: "ord_order_status NOT IN ('canceled', 'unavailable')"
+  population: "NA"
+  grain:
+  - ord_order_purchase_timestamp
+  time_grain: day
+  date_basis: ord_order_purchase_timestamp
+  unit: "currency:BRL"
+  precision: "2"
+  additivity: additive
+  valid_range:
+    min: "0"
+    max: "none"
+  cadence: daily
+  dispute_owner: sandeep
+  version: "1.0.0"
+  effective_from: '2026-10-07'
+  reconciliation:
+    control: "sum:price"
+    excluded_by: "ord_order_status IN ('canceled', 'unavailable')"
+    max_excluded_pct: "10"
+  target_table: gold_gmv_day
+  golden_values:
+  - key:
+      ord_order_purchase_timestamp: '2017-02-12'
+    value: "15098.25"
+  - key:
+      ord_order_purchase_timestamp: '2017-02-15'
+    value: "6770.15"
+  - key:
+      ord_order_purchase_timestamp: '2016-10-03'
+    value: "441.98"

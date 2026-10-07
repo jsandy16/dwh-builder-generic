@@ -1,0 +1,8 @@
+# dwh (layout v2): data rows, local state and machine-specific files stay out of git
+.dwh/
+data/raw/
+intake/current/
+dwh
+dwh.cmd
+__pycache__/
+*.pyc

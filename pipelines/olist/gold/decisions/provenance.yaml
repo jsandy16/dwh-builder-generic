@@ -1,0 +1,1590 @@
+metrics:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: ac40b5ff7883c75c57a9066cd74162841569534b3cb8a96d08d9bd5729a5b61b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F4"
+  default_kept: "no"
+metrics.orders_placed.entity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6b93dcf0ea82370276a861dd96eaffa3a2f80edd241ed8e94cdef4009def374a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F6"
+  default_kept: "yes"
+metrics.gmv.entity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: eee2982d6d2de12521b5c54985b9b3eb3d533272efec25763f86a4f829ae74a1
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G6"
+  default_kept: "yes"
+metrics.avg_order_value.entity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: eee2982d6d2de12521b5c54985b9b3eb3d533272efec25763f86a4f829ae74a1
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H6"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.entity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6b93dcf0ea82370276a861dd96eaffa3a2f80edd241ed8e94cdef4009def374a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I6"
+  default_kept: "yes"
+metrics.avg_review_score.entity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 82f8fc8ed1eed68fc3a7106fa179dcfe2c7c3499cff04a22d6b025eb8c5d9c7a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J6"
+  default_kept: "yes"
+metrics.cancellation_rate.entity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 6b93dcf0ea82370276a861dd96eaffa3a2f80edd241ed8e94cdef4009def374a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K6"
+  default_kept: "yes"
+metrics.orders_placed.plain_definition:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a290c5afc03bc49f62a2626b6bb0bc843e3e4597b87271f0d3ba8a64e76f67f6
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F7"
+  default_kept: "yes"
+metrics.gmv.plain_definition:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 525b66c158e0f5918bf9f3f9d8aaf024c397c5d2fbfddc1d533e42a45db63f08
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G7"
+  default_kept: "yes"
+metrics.avg_order_value.plain_definition:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 46bab58919a71a19437302d1e2a3d9b5cda9345bc419627b2b72974e14b3d49b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H7"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.plain_definition:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f9775edcb9013713516b6cad478706ed9a0236109b569de019f861cabaa5c8cb
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I7"
+  default_kept: "yes"
+metrics.avg_review_score.plain_definition:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 70b0efd07fbda0bedaf40d6456e3804d4afd3bb95622d01b4fc0a89e088c7137
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J7"
+  default_kept: "yes"
+metrics.cancellation_rate.plain_definition:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: e3ef8aeb587c6411d3d8341c861c66420eb0d78825f40a203763bbc1052b9e74
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K7"
+  default_kept: "yes"
+metrics.orders_placed.metric_type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F8"
+  default_kept: "yes"
+metrics.gmv.metric_type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 4482ea0ae0ce3742ddbdc1953682872957da22ba1fd100977e444012ed63572c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G8"
+  default_kept: "yes"
+metrics.avg_order_value.metric_type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9c71fc499138bde9eea1b57a8dc5c37921aa7ed10ce9cb882cdffb36617789f1
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H8"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.metric_type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 239094bb2e2c37df236512cacff08f7f2524a6f9098e494218e6e47181ec2381
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I8"
+  default_kept: "yes"
+metrics.avg_review_score.metric_type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9c71fc499138bde9eea1b57a8dc5c37921aa7ed10ce9cb882cdffb36617789f1
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J8"
+  default_kept: "yes"
+metrics.cancellation_rate.metric_type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 239094bb2e2c37df236512cacff08f7f2524a6f9098e494218e6e47181ec2381
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K8"
+  default_kept: "yes"
+metrics.orders_placed.numerator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F9"
+  default_kept: "yes"
+metrics.gmv.numerator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 902fb4cd213dc6389cb80d675187d5b0d2b75e8ea9a2ef45edae21633a4e07ea
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G9"
+  default_kept: "yes"
+metrics.avg_order_value.numerator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 902fb4cd213dc6389cb80d675187d5b0d2b75e8ea9a2ef45edae21633a4e07ea
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H9"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.numerator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I9"
+  default_kept: "yes"
+metrics.avg_review_score.numerator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: da701e45ad85eaffb42e7a38c73bd8076ca018fbf7f971a11ff9ae729b240f81
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J9"
+  default_kept: "yes"
+metrics.cancellation_rate.numerator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K9"
+  default_kept: "yes"
+metrics.orders_placed.numerator.filter:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F10"
+  default_kept: "yes"
+metrics.gmv.numerator.filter:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G10"
+  default_kept: "yes"
+metrics.avg_order_value.numerator.filter:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H10"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.numerator.filter:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d821a83349675bb9bf366197ad30169f1fb824360e7a3fa38770ca7ad29a8328
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I10"
+  default_kept: "yes"
+metrics.avg_review_score.numerator.filter:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J10"
+  default_kept: "yes"
+metrics.cancellation_rate.numerator.filter:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0c6a25a7471be706075021a38df65f413bda70e7e4af31cdf45efd5712a10949
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K10"
+  default_kept: "yes"
+metrics.avg_order_value.denominator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: aba1d426bbe7a0007ca2bc3b76230e820a2c47ad722a2b48e0109ffd063523fc
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H11"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.denominator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I11"
+  default_kept: "yes"
+metrics.avg_review_score.denominator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J11"
+  default_kept: "yes"
+metrics.cancellation_rate.denominator.measure:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K11"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.denominator.include.column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 72d0e1c8d3a88b92ab9c68437408d7f693825e712861261081ec0f89a9a4039f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I12"
+  default_kept: "yes"
+metrics.cancellation_rate.denominator.include.column:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 72d0e1c8d3a88b92ab9c68437408d7f693825e712861261081ec0f89a9a4039f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K12"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.denominator.include.values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: af061485e2d908c22446f000b56aa5d45e909d40af31b4563062cc5f4d13ff50
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I13"
+  default_kept: "yes"
+metrics.cancellation_rate.denominator.include.values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b9eb599a9ccfd376cb884a8301aec39decd52d450cf1378533c51a8e186ff6aa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K13"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.denominator.exclude.values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 63eac8a2a21d2735061791cede94d46d6c0e688ad2cf6894f81290dd8389f8fb
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I14"
+  default_kept: "yes"
+metrics.cancellation_rate.denominator.exclude.values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K14"
+  default_kept: "yes"
+metrics.orders_placed.filters:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F15"
+  default_kept: "yes"
+metrics.gmv.filters:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d5af94118f6a2eaedbc0c1b8d157977142baf47092cb05a05c9cfa3e62412259
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G15"
+  default_kept: "yes"
+metrics.avg_order_value.filters:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d5af94118f6a2eaedbc0c1b8d157977142baf47092cb05a05c9cfa3e62412259
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H15"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.filters:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I15"
+  default_kept: "yes"
+metrics.avg_review_score.filters:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J15"
+  default_kept: "yes"
+metrics.cancellation_rate.filters:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K15"
+  default_kept: "yes"
+metrics.avg_order_value.zero_denominator:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f072cbec3bf8841871d4284230c5e983dc211a56837aed862487148f947d1a1f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H16"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.zero_denominator:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f072cbec3bf8841871d4284230c5e983dc211a56837aed862487148f947d1a1f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I16"
+  default_kept: "yes"
+metrics.avg_review_score.zero_denominator:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f072cbec3bf8841871d4284230c5e983dc211a56837aed862487148f947d1a1f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J16"
+  default_kept: "yes"
+metrics.cancellation_rate.zero_denominator:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f072cbec3bf8841871d4284230c5e983dc211a56837aed862487148f947d1a1f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K16"
+  default_kept: "yes"
+metrics.orders_placed.population:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F17"
+  default_kept: "yes"
+metrics.gmv.population:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G17"
+  default_kept: "yes"
+metrics.avg_order_value.population:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H17"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.population:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I17"
+  default_kept: "yes"
+metrics.avg_review_score.population:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J17"
+  default_kept: "yes"
+metrics.cancellation_rate.population:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K17"
+  default_kept: "yes"
+metrics.orders_placed.grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c3cb831dc88883e275690765a2faa9adda21a42b486c797c23dfc12c7830af55
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F18"
+  default_kept: "yes"
+metrics.gmv.grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8b6b938b1c465fbb4d1cd11c7cc669138c0dea3b8cc3c9208623b0ca45bf04f2
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G18"
+  default_kept: "yes"
+metrics.avg_order_value.grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8b6b938b1c465fbb4d1cd11c7cc669138c0dea3b8cc3c9208623b0ca45bf04f2
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H18"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: aa36fba54077dcffcfcc6aa5b82e3aa5d0f1449740adfaf71ae6f67b1e329b1c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I18"
+  default_kept: "yes"
+metrics.avg_review_score.grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 2029b9209756057fd176faba24f9e30e95a8da213b6ba7bed0ae140f639b16bb
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J18"
+  default_kept: "yes"
+metrics.cancellation_rate.grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: aa36fba54077dcffcfcc6aa5b82e3aa5d0f1449740adfaf71ae6f67b1e329b1c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K18"
+  default_kept: "yes"
+metrics.orders_placed.time_grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 051a9620d1bd5b81584d838db0e0e86acd8f28cc1ecd613d1b60af27b953dd37
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F19"
+  default_kept: "yes"
+metrics.gmv.time_grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 051a9620d1bd5b81584d838db0e0e86acd8f28cc1ecd613d1b60af27b953dd37
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G19"
+  default_kept: "yes"
+metrics.avg_order_value.time_grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 051a9620d1bd5b81584d838db0e0e86acd8f28cc1ecd613d1b60af27b953dd37
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H19"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.time_grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 051a9620d1bd5b81584d838db0e0e86acd8f28cc1ecd613d1b60af27b953dd37
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I19"
+  default_kept: "yes"
+metrics.avg_review_score.time_grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 051a9620d1bd5b81584d838db0e0e86acd8f28cc1ecd613d1b60af27b953dd37
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J19"
+  default_kept: "yes"
+metrics.cancellation_rate.time_grain:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 051a9620d1bd5b81584d838db0e0e86acd8f28cc1ecd613d1b60af27b953dd37
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K19"
+  default_kept: "yes"
+metrics.orders_placed.date_basis:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a67fd1b5414faaaebd694486e004ec871de23be139d071c867a41d1e64124fdc
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F20"
+  default_kept: "yes"
+metrics.gmv.date_basis:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5e86cf68bae835d6991326c5afe20dddd4f68e0dc2cf8e1e6ba4cd35bca5b460
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G20"
+  default_kept: "yes"
+metrics.avg_order_value.date_basis:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5e86cf68bae835d6991326c5afe20dddd4f68e0dc2cf8e1e6ba4cd35bca5b460
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H20"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.date_basis:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a67fd1b5414faaaebd694486e004ec871de23be139d071c867a41d1e64124fdc
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I20"
+  default_kept: "yes"
+metrics.avg_review_score.date_basis:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 38b4ad9f11167e4bb7f7e957692cfc13b88f7057ba7f8dda72241f59b5936836
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J20"
+  default_kept: "yes"
+metrics.cancellation_rate.date_basis:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a67fd1b5414faaaebd694486e004ec871de23be139d071c867a41d1e64124fdc
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K20"
+  default_kept: "yes"
+metrics.orders_placed.unit:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F21"
+  default_kept: "yes"
+metrics.gmv.unit:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: bcde470e61bf2bcf88c610c30e1f899d5567c921ab7fd497e18602d003619395
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G21"
+  default_kept: "yes"
+metrics.avg_order_value.unit:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: bcde470e61bf2bcf88c610c30e1f899d5567c921ab7fd497e18602d003619395
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H21"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.unit:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 927f113e4d1abc30c0ccb562d93d679ec99e0cdf8a2bb0da22473874574bba34
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I21"
+  default_kept: "yes"
+metrics.avg_review_score.unit:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 8cf4acad1340daa97484547e7fe239978b70f3456dd35a834ca5eef22442c5bd
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J21"
+  default_kept: "yes"
+metrics.cancellation_rate.unit:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 927f113e4d1abc30c0ccb562d93d679ec99e0cdf8a2bb0da22473874574bba34
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K21"
+  default_kept: "yes"
+metrics.orders_placed.precision:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F22"
+  default_kept: "yes"
+metrics.gmv.precision:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc11310c456c3690d5a74c23aa31cc25b4e74cdae146c71e54ad9dbc1d109fde
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G22"
+  default_kept: "yes"
+metrics.avg_order_value.precision:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc11310c456c3690d5a74c23aa31cc25b4e74cdae146c71e54ad9dbc1d109fde
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H22"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.precision:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 391552c099c101b131feaf24c5795a6a15bc8ec82015424e0d2b4274a369a0bf
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I22"
+  default_kept: "yes"
+metrics.avg_review_score.precision:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc11310c456c3690d5a74c23aa31cc25b4e74cdae146c71e54ad9dbc1d109fde
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J22"
+  default_kept: "yes"
+metrics.cancellation_rate.precision:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 391552c099c101b131feaf24c5795a6a15bc8ec82015424e0d2b4274a369a0bf
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K22"
+  default_kept: "yes"
+metrics.orders_placed.additivity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9b5fa6f9217c165c470d2d6b816f7edd3810e0fb98e0cb451ac2e1b214264b3a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F23"
+  default_kept: "yes"
+metrics.gmv.additivity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9b5fa6f9217c165c470d2d6b816f7edd3810e0fb98e0cb451ac2e1b214264b3a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G23"
+  default_kept: "yes"
+metrics.avg_order_value.additivity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 3082fde28d7a836c1f64febeead1705a1e5d2b40da34795c7c1a216c54283a00
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H23"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.additivity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 3082fde28d7a836c1f64febeead1705a1e5d2b40da34795c7c1a216c54283a00
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I23"
+  default_kept: "yes"
+metrics.avg_review_score.additivity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 3082fde28d7a836c1f64febeead1705a1e5d2b40da34795c7c1a216c54283a00
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J23"
+  default_kept: "yes"
+metrics.cancellation_rate.additivity:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 3082fde28d7a836c1f64febeead1705a1e5d2b40da34795c7c1a216c54283a00
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K23"
+  default_kept: "yes"
+metrics.orders_placed.valid_range.min:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F24"
+  default_kept: "yes"
+metrics.gmv.valid_range.min:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G24"
+  default_kept: "yes"
+metrics.avg_order_value.valid_range.min:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H24"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.valid_range.min:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I24"
+  default_kept: "yes"
+metrics.avg_review_score.valid_range.min:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 391552c099c101b131feaf24c5795a6a15bc8ec82015424e0d2b4274a369a0bf
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J24"
+  default_kept: "yes"
+metrics.cancellation_rate.valid_range.min:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K24"
+  default_kept: "yes"
+metrics.orders_placed.valid_range.max:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F25"
+  default_kept: "yes"
+metrics.gmv.valid_range.max:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G25"
+  default_kept: "yes"
+metrics.avg_order_value.valid_range.max:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H25"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.valid_range.max:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d77ccb69e3f915ed75b4a2db3ff5893fdd0f433e02fdff100441fb843aae585b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I25"
+  default_kept: "yes"
+metrics.avg_review_score.valid_range.max:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J25"
+  default_kept: "yes"
+metrics.cancellation_rate.valid_range.max:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d77ccb69e3f915ed75b4a2db3ff5893fdd0f433e02fdff100441fb843aae585b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K25"
+  default_kept: "yes"
+metrics.orders_placed.cadence:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fa6a92cf80cf218ed717b3cc3a405ffda3fdf6a983d72fed1bdd113622fea03d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F26"
+  default_kept: "yes"
+metrics.gmv.cadence:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fa6a92cf80cf218ed717b3cc3a405ffda3fdf6a983d72fed1bdd113622fea03d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G26"
+  default_kept: "yes"
+metrics.avg_order_value.cadence:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fa6a92cf80cf218ed717b3cc3a405ffda3fdf6a983d72fed1bdd113622fea03d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H26"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.cadence:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fa6a92cf80cf218ed717b3cc3a405ffda3fdf6a983d72fed1bdd113622fea03d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I26"
+  default_kept: "yes"
+metrics.avg_review_score.cadence:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fa6a92cf80cf218ed717b3cc3a405ffda3fdf6a983d72fed1bdd113622fea03d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J26"
+  default_kept: "yes"
+metrics.cancellation_rate.cadence:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fa6a92cf80cf218ed717b3cc3a405ffda3fdf6a983d72fed1bdd113622fea03d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K26"
+  default_kept: "yes"
+metrics.orders_placed.dispute_owner:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 32d39bfb69d87b1b51c245a16607c80e2ee76e2d9f74cced5cce9cd6ff9f8887
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F27"
+  default_kept: "yes"
+metrics.gmv.dispute_owner:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 32d39bfb69d87b1b51c245a16607c80e2ee76e2d9f74cced5cce9cd6ff9f8887
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G27"
+  default_kept: "yes"
+metrics.avg_order_value.dispute_owner:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 32d39bfb69d87b1b51c245a16607c80e2ee76e2d9f74cced5cce9cd6ff9f8887
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H27"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.dispute_owner:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 32d39bfb69d87b1b51c245a16607c80e2ee76e2d9f74cced5cce9cd6ff9f8887
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I27"
+  default_kept: "yes"
+metrics.avg_review_score.dispute_owner:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 32d39bfb69d87b1b51c245a16607c80e2ee76e2d9f74cced5cce9cd6ff9f8887
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J27"
+  default_kept: "yes"
+metrics.cancellation_rate.dispute_owner:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 32d39bfb69d87b1b51c245a16607c80e2ee76e2d9f74cced5cce9cd6ff9f8887
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K27"
+  default_kept: "yes"
+metrics.orders_placed.golden_values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 389f56674b69171455d90d6a322b469bb1a71aa2f4e8f90c9a410b9d05241a2f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Golden values!B7"
+  default_kept: "no"
+metrics.gmv.golden_values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 605599730795573670d8fd52e7abbb668b3d9065cb2fd47ca707810a8f0b99d2
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Golden values!B10"
+  default_kept: "no"
+metrics.avg_order_value.golden_values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: bc810b8a1b22a2d975badea790b5144360f73bf23630fad4ba1c4bef4296c758
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Golden values!B13"
+  default_kept: "no"
+metrics.on_time_delivery_rate.golden_values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 13a93315705c32c47b23a7f1fd849598b8fc88d8046f47d45bd254f026f1c8b9
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Golden values!B16"
+  default_kept: "no"
+metrics.avg_review_score.golden_values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9b5fb52f3ba9bbe1c3ee5d2c4e577531f11d7ae9b751624e79eb709170eb135f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Golden values!B19"
+  default_kept: "no"
+metrics.cancellation_rate.golden_values:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 55e649958113f7697c04916212e427e16964661fb7f7790ede563a7839e2a65c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Golden values!B22"
+  default_kept: "no"
+metrics.orders_placed.version:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 39fe4a40977d0585fd5704359e3685b0ada5cf5ee061e5d97385601d120cd0ec
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F28"
+  default_kept: "yes"
+metrics.gmv.version:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 39fe4a40977d0585fd5704359e3685b0ada5cf5ee061e5d97385601d120cd0ec
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G28"
+  default_kept: "yes"
+metrics.avg_order_value.version:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 39fe4a40977d0585fd5704359e3685b0ada5cf5ee061e5d97385601d120cd0ec
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H28"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.version:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 39fe4a40977d0585fd5704359e3685b0ada5cf5ee061e5d97385601d120cd0ec
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I28"
+  default_kept: "yes"
+metrics.avg_review_score.version:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 39fe4a40977d0585fd5704359e3685b0ada5cf5ee061e5d97385601d120cd0ec
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J28"
+  default_kept: "yes"
+metrics.cancellation_rate.version:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 39fe4a40977d0585fd5704359e3685b0ada5cf5ee061e5d97385601d120cd0ec
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K28"
+  default_kept: "yes"
+metrics.orders_placed.effective_from:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 76d1562084b80ede48b8bcaa3acf2f92b835f1559225588120cbf9ee68496244
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F29"
+  default_kept: "yes"
+metrics.gmv.effective_from:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 76d1562084b80ede48b8bcaa3acf2f92b835f1559225588120cbf9ee68496244
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G29"
+  default_kept: "yes"
+metrics.avg_order_value.effective_from:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 76d1562084b80ede48b8bcaa3acf2f92b835f1559225588120cbf9ee68496244
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H29"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.effective_from:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 76d1562084b80ede48b8bcaa3acf2f92b835f1559225588120cbf9ee68496244
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I29"
+  default_kept: "yes"
+metrics.avg_review_score.effective_from:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 76d1562084b80ede48b8bcaa3acf2f92b835f1559225588120cbf9ee68496244
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J29"
+  default_kept: "yes"
+metrics.cancellation_rate.effective_from:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 76d1562084b80ede48b8bcaa3acf2f92b835f1559225588120cbf9ee68496244
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K29"
+  default_kept: "yes"
+metrics.orders_placed.reconciliation.control:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F30"
+  default_kept: "yes"
+metrics.gmv.reconciliation.control:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 902fb4cd213dc6389cb80d675187d5b0d2b75e8ea9a2ef45edae21633a4e07ea
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G30"
+  default_kept: "yes"
+metrics.avg_order_value.reconciliation.control:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: aba1d426bbe7a0007ca2bc3b76230e820a2c47ad722a2b48e0109ffd063523fc
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H30"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.reconciliation.control:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I30"
+  default_kept: "yes"
+metrics.avg_review_score.reconciliation.control:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J30"
+  default_kept: "yes"
+metrics.cancellation_rate.reconciliation.control:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: cc3ec73cd71163b2b0ee5faeb2a908226ac15c35c7207d9a626e63ccc47f0ffa
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K30"
+  default_kept: "yes"
+metrics.orders_placed.reconciliation.excluded_by:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F31"
+  default_kept: "yes"
+metrics.gmv.reconciliation.excluded_by:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 984224941e519d3581c0d97a8701efd9ca0e46c18e88c5bb826c11d0c2abcd0f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G31"
+  default_kept: "yes"
+metrics.avg_order_value.reconciliation.excluded_by:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 984224941e519d3581c0d97a8701efd9ca0e46c18e88c5bb826c11d0c2abcd0f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H31"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.reconciliation.excluded_by:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 92b10399e8b49cf61349e906904618f7630bdf7baf2568648d4a3cc17deadafd
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I31"
+  default_kept: "yes"
+metrics.avg_review_score.reconciliation.excluded_by:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J31"
+  default_kept: "yes"
+metrics.cancellation_rate.reconciliation.excluded_by:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K31"
+  default_kept: "yes"
+metrics.orders_placed.reconciliation.max_excluded_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F32"
+  default_kept: "yes"
+metrics.gmv.reconciliation.max_excluded_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 536549599ec6c3b859cd3970025779a13d061783c73e663fea7f963e98379aa8
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G32"
+  default_kept: "yes"
+metrics.avg_order_value.reconciliation.max_excluded_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 536549599ec6c3b859cd3970025779a13d061783c73e663fea7f963e98379aa8
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H32"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.reconciliation.max_excluded_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 68fec0473e988a1ef1c13c4f9b9a15cc67de203de8be796ce82ae4fd7b158e64
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I32"
+  default_kept: "yes"
+metrics.avg_review_score.reconciliation.max_excluded_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J32"
+  default_kept: "yes"
+metrics.cancellation_rate.reconciliation.max_excluded_pct:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 98089e6d36f78e9766c9ea34d5acb3611f3a92cd81c5eb102095d924ffc7d08b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K32"
+  default_kept: "yes"
+metrics.orders_placed.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a2f343ec8cdadaa73089b78ff48afb1d7ebdaa4990381978c022aeb27d1248a7
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!F33"
+  default_kept: "yes"
+metrics.gmv.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 1171f44bcee906b3bea1fda600cc6ee503a2a9552cbf3165d8e341419e6af73b
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!G33"
+  default_kept: "yes"
+metrics.avg_order_value.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 86ef375077d403a9fca5b2e12c83ee54ea1bba99e667ca2524d2016f46b6c0af
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!H33"
+  default_kept: "yes"
+metrics.on_time_delivery_rate.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: d006920a7848567e5eb3a8934f799b829e53f06e7c854372faa90b73acb5ccdb
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!I33"
+  default_kept: "yes"
+metrics.avg_review_score.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c0cd37cefc37b45d3b96f99fe1ee6520c9f1ee78a8403a04f4d4241f342edc39
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!J33"
+  default_kept: "yes"
+metrics.cancellation_rate.target_table:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: fdd556f92630d7aac1ecde83a9b01c35b21969056466161709a06eb1a607c2a1
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "KPIs!K33"
+  default_kept: "yes"

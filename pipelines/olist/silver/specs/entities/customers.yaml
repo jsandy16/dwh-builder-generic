@@ -1,0 +1,47 @@
+customers:
+  sources:
+  - customers
+  columns:
+    customer_id:
+      type: VARCHAR
+    customer_unique_id:
+      type: VARCHAR
+    customer_zip_code_prefix:
+      type: VARCHAR
+    customer_city:
+      type: VARCHAR
+    customer_state:
+      type: VARCHAR
+  mapping:
+    customers:
+      customer_id: customer_id
+      customer_unique_id: customer_unique_id
+      customer_zip_code_prefix: "lpad(customer_zip_code_prefix, 5, '0')"
+      customer_city: customer_city
+      customer_state: customer_state
+  natural_key:
+  - customer_id
+  tiebreaker:
+  - customer_id ASC
+  merge:
+    strategy: partition_replace
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  masking:
+    customer_id: hash
+    customer_unique_id: hash
+    customer_zip_code_prefix: hash
+  null_policy:
+    customer_id: drop
+    customer_unique_id: keep
+    customer_zip_code_prefix: keep
+    customer_city: keep
+    customer_state: keep
+  hard_rejects: "none"
+  valid_anomalies: "none"
+  lookups: "NA"
+  flags: "NA"
+  drop_columns: "NA"

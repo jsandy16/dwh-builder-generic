@@ -1,0 +1,9 @@
+people:
+  sandeep:
+    name: Sandeep Jaguri
+    email: "NA"
+    roles:
+    - DE
+    - PO
+    - SME
+    - GOV

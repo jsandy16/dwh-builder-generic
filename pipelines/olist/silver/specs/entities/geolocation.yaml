@@ -1,0 +1,52 @@
+geolocation:
+  sources:
+  - geolocation
+  columns:
+    geolocation_zip_code_prefix:
+      type: VARCHAR
+    geolocation_lat:
+      type: DOUBLE
+    geolocation_lng:
+      type: DOUBLE
+    geolocation_city:
+      type: VARCHAR
+    geolocation_state:
+      type: VARCHAR
+  mapping:
+    geolocation:
+      geolocation_zip_code_prefix: "lpad(geolocation_zip_code_prefix, 5, '0')"
+      geolocation_lat: geolocation_lat
+      geolocation_lng: geolocation_lng
+      geolocation_city: geolocation_city
+      geolocation_state: geolocation_state
+  natural_key:
+  - geolocation_zip_code_prefix
+  - geolocation_lat
+  - geolocation_lng
+  - geolocation_city
+  - geolocation_state
+  tiebreaker:
+  - geolocation_zip_code_prefix ASC
+  merge:
+    strategy: append
+    partition_column: "NA"
+  rejected_survivor_policy: keep_last_good
+  dead_letter_tolerance_pct: "5"
+  tolerance_source: owner
+  target_table: "NA"
+  hard_rejects:
+    outside_brazil:
+      predicate: geolocation_lat NOT BETWEEN -33.75 AND 5.27 OR geolocation_lng NOT BETWEEN -73.99 AND
+        -34.79
+      reason: outside_brazil
+  null_policy:
+    geolocation_zip_code_prefix: keep
+    geolocation_lat: keep
+    geolocation_lng: keep
+    geolocation_city: keep
+    geolocation_state: keep
+  valid_anomalies: "none"
+  lookups: "NA"
+  flags: "NA"
+  drop_columns: "NA"
+  readback_confirmed: "yes"

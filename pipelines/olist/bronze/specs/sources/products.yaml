@@ -1,0 +1,79 @@
+products:
+  role: dimension
+  connector: local_file
+  location: "data/raw/batch_{batch}/olist_products_dataset.csv"
+  format: csv
+  load_type: incremental_append
+  redelivery_policy: replace
+  drift_policy: land_and_log
+  freshness:
+    basis: "none"
+  volume:
+    min_rows: "NA"
+    max_rows: "NA"
+  retry_attempts: "3"
+  credentials_env: "NA"
+  profile_split_by: "NA"
+  csv:
+    delimiter: ","
+    header: "yes"
+    quote: "\""
+    escape: "\""
+    encoding: utf-8
+    null_tokens: "NA"
+  schema:
+    columns:
+      product_id:
+        type: VARCHAR
+        required: "yes"
+        key: "yes"
+        allowed_values: "NA"
+        classification: internal
+      product_name_lenght:
+        type: DOUBLE
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      product_description_lenght:
+        type: DOUBLE
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      product_photos_qty:
+        type: DOUBLE
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      product_weight_g:
+        type: DOUBLE
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      product_length_cm:
+        type: DOUBLE
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      product_height_cm:
+        type: DOUBLE
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      product_width_cm:
+        type: DOUBLE
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal
+      product_category_name:
+        type: VARCHAR
+        required: "yes"
+        key: "no"
+        allowed_values: "NA"
+        classification: internal

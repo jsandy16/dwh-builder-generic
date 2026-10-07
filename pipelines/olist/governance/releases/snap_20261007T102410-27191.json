@@ -1,0 +1,39 @@
+{
+  "approved": false,
+  "approved_by": null,
+  "gold_verified_at": "2026-10-07T10:23:53+00:00",
+  "pending_decisions": [],
+  "profile": "fast",
+  "published_at": "2026-10-07T10:24:10+00:00",
+  "run_id": "20261007T102410-27191",
+  "snapshot": "snap_20261007T102410-27191",
+  "spec_hash": "4085d7db00a857a737cab62ad4f233d26ad6d9b5cd6cb77e7844af004b2eb449",
+  "synthetic_data": false,
+  "tables": {
+    "gold_avg_order_value_day": {
+      "rows": 127,
+      "sha256": "289a4e174094e83fcdefafcad70d9169a939e93dd2b9b7f4e934f9e3a27cfa73"
+    },
+    "gold_avg_review_score_day": {
+      "rows": 152,
+      "sha256": "c998a2d5b7993768980075e10a3b3a002fbce43ba020ddc6558e7e2ccdd40cba"
+    },
+    "gold_cancellation_rate_day": {
+      "rows": 131,
+      "sha256": "1e6dd1d66ceba436e8df6954d1530650d1fefe2be82131eb86a68cb70b85dd9a"
+    },
+    "gold_gmv_day": {
+      "rows": 127,
+      "sha256": "f8c91117be2fdfae2ee678c65e232b4dd9b35f251bd950ab14e7d45a67adffda"
+    },
+    "gold_on_time_delivery_rate_day": {
+      "rows": 131,
+      "sha256": "74422eacbf3d1439a0b8ceb4ac3fadb8f21a650ea68b63cc4a6f681fdae8e640"
+    },
+    "gold_orders_placed_day": {
+      "rows": 1685,
+      "sha256": "b4edb4d2161a35433c9d7559a98bfdc0260d3e102cd98afad90a95aea499c4cc"
+    }
+  },
+  "target": "local"
+}

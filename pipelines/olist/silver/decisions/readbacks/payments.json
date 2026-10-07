@@ -1,0 +1,15 @@
+{
+  "conflicts": [],
+  "generated_at": "2026-10-07T08:04:43+00:00",
+  "rows": [
+    {
+      "action": "KEEP \u2014 never removed",
+      "kind": "valid anomaly",
+      "matches": 0,
+      "name": "zero_value",
+      "rule": "payment_value = 0"
+    }
+  ],
+  "rules_hash": "d61c044576de1801ab5a3c2928f707144f4e7be5a0cd1597d655b957f4ad5901",
+  "total": 4225
+}

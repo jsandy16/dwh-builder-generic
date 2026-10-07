@@ -1,0 +1,420 @@
+serve.title:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0a2b071405b6606aea8696ba522852dcfae171cbdbac06f9195e0f7bd6680224
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard!G6"
+  default_kept: "yes"
+serve.audience:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 900ea91056842daac58cfb165a6249beb9bac40521e03972c8430dd171e70e85
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard!G7"
+  default_kept: "yes"
+serve.runtime:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 991e5f2db81872163fb9c56c76a98bd7d5117f27b4b374a02a9007dc69bddee7
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard!G8"
+  default_kept: "yes"
+serve.reference_clock:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 2aa310588c26f507b89c938ebd02d51af164bb3dede5b25c1a1c3264b31d9f07
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard!G9"
+  default_kept: "yes"
+serve.kpis:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: c2053499d9f6edd238bd46ea32a4b6036f72ca2781666113d225661cb3028e5a
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!A6"
+  default_kept: "yes"
+serve.kpis.orders.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: eddc2c2a4c1cc2008d177f879dc951fde67bb37fafbd1bc5d918c11605ddda6f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C6"
+  default_kept: "no"
+serve.kpis.gmv.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 4dd3dc28c784a5868e41b9e41a9f85b890292c4fdff998b6f9f71f422885ce63
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C7"
+  default_kept: "no"
+serve.kpis.aov.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: ccb9912f8ca9764efc01dfb9e84f6a9a2b5ee743d292382d2353ac8df8a3ef17
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C8"
+  default_kept: "no"
+serve.kpis.on_time.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 3ca21ce494b95d35393f6d1977eadc0cbe412e62ccbe36f43778a7a061a76c5f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C9"
+  default_kept: "no"
+serve.kpis.review.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 41014b06d1f47a21e063d93b0924b977f637acfdf4b72f2ad4078e806f82b6a2
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C10"
+  default_kept: "no"
+serve.kpis.cancel.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 1cfefc4423547c53af2fa235e9df9c8256c4bede2c90de62d70b10fc325c1629
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C11"
+  default_kept: "no"
+serve.kpis.orders.label:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 0bb63ea083f6c3d813ff5365bb99c6676dac0e8b94284e48e5dd610d64a3e13d
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D6"
+  default_kept: "no"
+serve.kpis.gmv.label:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 307b950191dbae3552cf896ec1733cb044b6593b022ed2549d476bb08e9cfeb8
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D7"
+  default_kept: "no"
+serve.kpis.aov.label:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a9d016babcab3d93e8974bea3889e424cadc6da3fa9905c9f02ae7df5b1d9379
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D8"
+  default_kept: "no"
+serve.kpis.on_time.label:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 7c770efe3df3d41aee391093e479fa44b651f76f22ce581e890619d9b8c341a2
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D9"
+  default_kept: "no"
+serve.kpis.review.label:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 9545ea2ec147666aaa101c012d8d9f56307a2e3939eab79946bac90606492083
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D10"
+  default_kept: "no"
+serve.kpis.cancel.label:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 80a855c58690759279dec24ee8aee780a9caaba003070bb4b0a88dfcc042c364
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D11"
+  default_kept: "no"
+serve.charts:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: ccaa7816b70f6f0785ed1afd9cb02ea3a2f06bfaa74dff5b728b5a6563c50781
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!A6"
+  default_kept: "yes"
+serve.charts.orders_by_state.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 4c293ff010a730f0972761331d1b5678478d425c2dc5cefd16d8f20059e497f3
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!E12"
+  default_kept: "no"
+serve.charts.orders_trend.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 42d2b70866ba77b84620696f6c6cb2814379e3e65f3027c8ec4692eaf7dad0be
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!E13"
+  default_kept: "no"
+serve.charts.gmv_trend.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 42d2b70866ba77b84620696f6c6cb2814379e3e65f3027c8ec4692eaf7dad0be
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!E14"
+  default_kept: "no"
+serve.charts.on_time_trend.type:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 42d2b70866ba77b84620696f6c6cb2814379e3e65f3027c8ec4692eaf7dad0be
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!E15"
+  default_kept: "no"
+serve.charts.orders_by_state.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: eddc2c2a4c1cc2008d177f879dc951fde67bb37fafbd1bc5d918c11605ddda6f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C12"
+  default_kept: "no"
+serve.charts.orders_trend.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: eddc2c2a4c1cc2008d177f879dc951fde67bb37fafbd1bc5d918c11605ddda6f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C13"
+  default_kept: "no"
+serve.charts.gmv_trend.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 4dd3dc28c784a5868e41b9e41a9f85b890292c4fdff998b6f9f71f422885ce63
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C14"
+  default_kept: "no"
+serve.charts.on_time_trend.metric:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 3ca21ce494b95d35393f6d1977eadc0cbe412e62ccbe36f43778a7a061a76c5f
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!C15"
+  default_kept: "no"
+serve.charts.orders_by_state.x:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 94c65963312060dc3209cbbdba36f7018bd11abdba0e9a673fec3a4b64dcddf1
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!F12"
+  default_kept: "no"
+serve.charts.orders_trend.x:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a67fd1b5414faaaebd694486e004ec871de23be139d071c867a41d1e64124fdc
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!F13"
+  default_kept: "no"
+serve.charts.gmv_trend.x:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 5e86cf68bae835d6991326c5afe20dddd4f68e0dc2cf8e1e6ba4cd35bca5b460
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!F14"
+  default_kept: "no"
+serve.charts.on_time_trend.x:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a67fd1b5414faaaebd694486e004ec871de23be139d071c867a41d1e64124fdc
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!F15"
+  default_kept: "no"
+serve.charts.orders_by_state.title:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: a636cd32add460365680b71001c66d1715b1b767ee3d71a0eb6bcafee120d690
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D12"
+  default_kept: "no"
+serve.charts.orders_trend.title:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: f173b655ea56c9381c8ceb7204ebc90fec950cb7ae55f75e2c83719ebec2af84
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D13"
+  default_kept: "no"
+serve.charts.gmv_trend.title:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: b1350687bf7dcbc0cb7f0909e9976e82170552b0b8c5fc204c6a1e4dd4c96084
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D14"
+  default_kept: "no"
+serve.charts.on_time_trend.title:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 23b2a6471f2e386c29772dac6b03790fb7b2b708f0d6820c802b9a22413ccc71
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!D15"
+  default_kept: "no"
+serve.charts.orders_by_state.color:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!G12"
+  default_kept: "no"
+serve.charts.orders_trend.color:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!G13"
+  default_kept: "no"
+serve.charts.gmv_trend.color:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!G14"
+  default_kept: "no"
+serve.charts.on_time_trend.color:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard visuals!G15"
+  default_kept: "no"
+serve.filters:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: answered
+  value_hash: 58d153768ca2cb348327d97921856a450a91145fa5db8a2e4dbf47ef7fe01511
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard!G11"
+  default_kept: "yes"
+serve.row_security:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "none"
+  value_hash: 30a0924a3360be687d1df9fcbbfdff62c01bc0fd14036ab9076cf7f451568666
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Governance!G8"
+  default_kept: "yes"
+serve.port:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard!G12"
+  default_kept: "yes"
+serve.auto_refresh_seconds:
+  by: sandeep
+  source: workbook
+  at: "2026-10-07T08:27:51+00:00"
+  state: "na"
+  value_hash: 508b6380548d6d2c2249c109f3d57c4783f0a26b6fe84d276a0390ebe2f2dc8c
+  workbook: olist-golden-values-returned.xlsx
+  workbook_sha256: 202d2effed7b2784
+  cell: "Dashboard!G13"
+  default_kept: "yes"

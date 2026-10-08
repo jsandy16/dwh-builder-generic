@@ -49,6 +49,13 @@ def main() -> int:
         for k, v in st.facts.items():
             print(f"  {k}: {v}")
         return 0
+    if os.name == "nt":
+        from dwhagent import winshell
+        bash = winshell.find_git_bash()
+        if bash is None:
+            print(winshell.HELP)
+            return 2
+        os.environ[winshell.ENV] = str(bash)  # the CLI then offers its Bash tool, not PowerShell
     if not os.environ.get("ANTHROPIC_API_KEY"):
         print("Set ANTHROPIC_API_KEY (an Anthropic API key: https://console.anthropic.com) — the agent uses the API.")
         return 2
@@ -60,6 +67,13 @@ def main() -> int:
     try:
         return asyncio.run(session.run(REPO, args.pipeline, args.model, args.max_turns, args.max_budget_usd,
                                        args.ask))
+    except session.NoShell as e:
+        from dwhagent import winshell
+        print(f"Stopped before doing anything: the agent was started without its command tool "
+              f"(tools offered: {e}).")
+        if os.name == "nt":
+            print(f"Git Bash used: {os.environ.get(winshell.ENV, 'none')}\n{winshell.HELP}")
+        return 2
     except KeyboardInterrupt:
         print("\nstopped.")
         return 130

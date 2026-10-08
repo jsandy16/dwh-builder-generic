@@ -20,6 +20,8 @@ decision belongs to a person.
 | The request | write it in `pipelines/sales/requirements/request.md` and add the supplier's notes next to it |
 | The data | put the files in `pipelines/sales/data/raw/`, then `python tools/data_manifest.py sales` |
 
+**On Windows, the agent needs Git for Windows (Git Bash).** Claude Code offers its command tool only when it finds Git Bash's `bash.exe`; without it the agent could read files but run nothing. The agent looks in the usual places (next to `git`, Program Files, your user folder) and stops with instructions if it finds none. If yours is elsewhere, set `export CLAUDE_CODE_GIT_BASH_PATH='C:\Program Files\Git\bin\bash.exe'` (the path to your `bash.exe`), e.g. at the end of `.venv/Scripts/activate`.
+
 The agent uses the API, so each session costs money. The default cap is $5 a session
 (`--max-budget-usd`). A claude.ai subscription does not cover it.
 

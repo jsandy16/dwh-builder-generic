@@ -94,3 +94,27 @@ def test_rules_hold_through_the_real_cli(repo, monkeypatch, tmp_path):
     assert commit[1] and "said no" in commit[2] and asked and "Commit" in asked[0]
     assert subprocess.run(["git", "rev-parse", "HEAD"], cwd=repo, capture_output=True, text=True).stdout == head
     assert set(offered) <= set(session.BASE_TOOLS) | {"Task"}, offered
+
+
+def test_no_shell_tool_stops_before_anything_runs(repo, monkeypatch, tmp_path):
+    """On Windows without Git Bash the CLI offers no Bash tool: the session must stop at once."""
+    pipeline = repo / "pipelines" / "demo"
+    monkeypatch.setattr(session, "BASE_TOOLS", ("Read", "Write"))
+    with FakeModel(SCRIPT) as fake:
+        monkeypatch.setenv("ANTHROPIC_BASE_URL", fake.url)
+        monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-test-not-a-key")
+        monkeypatch.setenv("CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC", "1")
+        monkeypatch.setenv("NO_PROXY", "127.0.0.1,localhost")
+        monkeypatch.setenv("no_proxy", "127.0.0.1,localhost")
+        monkeypatch.setenv("CLAUDE_CONFIG_DIR", str(tmp_path / "claude-config"))
+
+        async def go():
+            from claude_agent_sdk import ClaudeSDKClient
+            ctx = P.Context(repo=repo, pipeline=pipeline, python_names=("python", "python3"))
+            log = session.Log(pipeline / ".dwh" / "agent" / "sessions")
+            async with ClaudeSDKClient(options=session.build_options(ctx, log, None, 30, None)) as client:
+                await client.query("wiring test")
+                await session._stream(client, log, {"cost": 0.0, "turns": 0})
+        with pytest.raises(session.NoShell):
+            asyncio.run(asyncio.wait_for(go(), timeout=240))
+    assert not (pipeline / "intake" / "draft.yaml").exists()

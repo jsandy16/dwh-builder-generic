@@ -142,9 +142,18 @@ def _person(ctx: P.Context) -> str:
     return r.stdout.strip()
 
 
+class NoShell(RuntimeError):
+    """The CLI started without its Bash tool: the agent could read files but run nothing."""
+
+
 async def _stream(client, log: Log, totals: dict) -> None:
-    from claude_agent_sdk import AssistantMessage, ResultMessage, TextBlock, ToolUseBlock
+    from claude_agent_sdk import AssistantMessage, ResultMessage, SystemMessage, TextBlock, ToolUseBlock
     async for msg in client.receive_response():
+        if isinstance(msg, SystemMessage) and msg.subtype == "init":
+            tools = (msg.data or {}).get("tools") or []
+            log.write("init", tools=tools)
+            if tools and "Bash" not in tools:
+                raise NoShell(", ".join(t for t in tools if not t.startswith("mcp__")))
         if isinstance(msg, AssistantMessage):
             sub = bool(getattr(msg, "parent_tool_use_id", None))
             for block in msg.content:

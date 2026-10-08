@@ -13,6 +13,8 @@
 - `tools/dwhagent/probe.py`: counts-only diagnostics (tables, dead letters, what-if on a temporary
   copy). `tools/dwhagent/commit.py`: a guarded local commit of one pipeline, on a branch, never pushed.
 - `.claude-plugin/plugin.json`: the repository's `skills/` load as plugin skills (`dwh:dwh-init` …).
+- Windows: the agent finds Git Bash itself (sets `CLAUDE_CODE_GIT_BASH_PATH`) and stops before doing
+  anything if the CLI starts without its Bash tool, instead of drafting without being able to run commands.
 - Tests: 137 policy cases, the stage machine, and an end-to-end wiring test through the real CLI with
   a scripted stand-in for the model (CI job `agent`). Docs: `docs/agent.md`, ADR 0005.
 

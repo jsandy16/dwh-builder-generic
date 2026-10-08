@@ -18,7 +18,7 @@ ENV = "CLAUDE_CODE_GIT_BASH_PATH"
 HELP = """\
 The agent needs Git Bash on Windows to run commands, and none was found.
   1. Install Git for Windows (https://git-scm.com/download/win), or find your bash.exe:
-       in Git Bash:  cygpath -w "$(dirname "$(dirname "$(which git)")")"/bin/bash.exe
+       in Git Bash, `cygpath -w /` prints the Git folder; bash.exe is in its bin folder
   2. Tell the agent where it is (Git Bash):
        export CLAUDE_CODE_GIT_BASH_PATH='C:\\Program Files\\Git\\bin\\bash.exe'
      (PowerShell: $env:CLAUDE_CODE_GIT_BASH_PATH="C:\\Program Files\\Git\\bin\\bash.exe")
